@@ -1,274 +1,582 @@
-<title>Politique de confidentialité - Salli Ala Almustafa ﷺ</title>
+```html
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Politique de confidentialité - Salli Ala Almustafa ﷺ</title>
+
+    <meta
+        name="description"
+        content="Politique de confidentialité de l’application Salli Ala Almustafa ﷺ."
+    >
+
+    <meta
+        name="theme-color"
+        content="#2f8164"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logo.png"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f6f5;
+            color: #1f2937;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+
+            overflow-x: hidden;
+        }
 
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="assets/logo.png">
+        .page-header {
+            text-align: center;
+            padding: 32px 20px 24px;
+        }
+
+        .logo {
+            display: block;
+
+            width: clamp(85px, 13vw, 130px);
+            height: clamp(85px, 13vw, 130px);
 
+            max-width: 100%;
+            max-height: 100%;
 
-<img src="assets/logo.png"
-     alt="Logo Salli Ala Almustafa ﷺ"
-     class="logo">
+            object-fit: contain;
 
+            margin: 0 auto 18px;
+        }
 
-<h1>Salli Ala Almustafa ﷺ</h1>
+        .app-name {
+            margin: 0;
+            color: #287b60;
 
-<div class="subtitle">
-    Politique de confidentialité
-</div>
+            font-size: clamp(
+                1.35rem,
+                3.5vw,
+                2rem
+            );
 
+            font-weight: 700;
+        }
 
-<div class="language-selector">
-    <a href="ar.html">العربية</a>
-    <a href="en.html">English</a>
-    <a href="fr.html" class="active">Français</a>
-    <a href="es.html">Español</a>
-    <a href="id.html">Bahasa Indonesia</a>
-    <a href="ru.html">Русский</a>
-    <a href="tr.html">Türkçe</a>
-    <a href="ur.html">اردو</a>
-    <a href="zh.html">中文</a>
-    <a href="uk.html">Українська</a>
-    <a href="sw.html">Kiswahili</a>
-    <a href="bn.html">বাংলা</a>
-    <a href="so.html">Soomaali</a>
-    <a href="fil.html">Filipino</a>
-    <a href="ku.html">کوردی</a>
-</div>
+        .page-title {
+            margin: 6px 0 0;
+            color: #1f2937;
 
+            font-size: clamp(
+                1.15rem,
+                2.5vw,
+                1.45rem
+            );
 
+            font-weight: 600;
+        }
 
-<article class="policy">
+        .page-subtitle {
+            margin: 2px 0 0;
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
 
+        .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 18px 40px;
+        }
 
-<h2>Politique de confidentialité de Salli Ala Almustafa ﷺ</h2>
+        .privacy-card {
+            background: #ffffff;
 
-<p>
-    <strong>Dernière mise à jour :</strong> 27 juillet 2026
-</p>
+            border:
+                1px solid
+                rgba(47, 129, 100, 0.08);
 
+            border-radius: 22px;
 
-<p>
-    Bienvenue dans l'application Salli Ala Almustafa ﷺ.
-    Nous accordons une grande importance à la protection de la vie
-    privée de nos utilisateurs. Cette politique de confidentialité
-    explique comment l'application traite les informations et les
-    données lors de son utilisation.
-</p>
+            padding:
+                clamp(22px, 5vw, 48px);
 
+            box-shadow:
+                0 12px 35px
+                rgba(31, 41, 55, 0.07),
+                0 2px 8px
+                rgba(31, 41, 55, 0.03);
+        }
 
+        .updated {
+            display: inline-block;
+
+            margin-bottom: 22px;
+            padding: 6px 13px;
 
-<h3>1. Informations collectées par l'application</h3>
+            background:
+                rgba(47, 129, 100, 0.08);
 
-<p>
-    L'application Salli Ala Almustafa ﷺ ne collecte, ne demande
-    ni ne stocke aucune donnée personnelle permettant d'identifier
-    l'utilisateur, telles que :
-</p>
+            color: #287b60;
 
-<ul>
-    <li>Le nom.</li>
-    <li>L'adresse e-mail.</li>
-    <li>Le numéro de téléphone.</li>
-    <li>La localisation géographique.</li>
-    <li>Les contacts.</li>
-    <li>Les photos personnelles.</li>
-    <li>Les messages.</li>
-</ul>
+            border-radius: 999px;
 
-<p>
-    L'application ne nécessite pas la création d'un compte ni la
-    connexion à un compte pour utiliser ses fonctionnalités essentielles.
-</p>
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
 
+        .privacy-card h1 {
+            margin: 0 0 14px;
 
+            color: #287b60;
 
-<h3>2. Données stockées localement</h3>
+            font-size: clamp(
+                1.4rem,
+                3vw,
+                1.85rem
+            );
 
-<p>
-    L'application enregistre certains paramètres localement sur
-    l'appareil de l'utilisateur afin d'améliorer son expérience,
-    notamment :
-</p>
+            line-height: 1.5;
+        }
 
-<ul>
-    <li>Le son sélectionné pour les rappels.</li>
-    <li>Les paramètres des rappels.</li>
-    <li>Les préférences de l'utilisateur.</li>
-    <li>
-        Certains fichiers multimédias téléchargés pour être utilisés
-        dans l'application.
-    </li>
-</ul>
+        .privacy-card h2 {
+            margin: 34px 0 10px;
 
-<p>
-    Ces données sont stockées dans l'espace de stockage privé de
-    l'application et ne sont pas accessibles aux autres applications.
-</p>
+            padding-left: 12px;
+
+            border-left:
+                4px solid
+                #2f8164;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.08rem,
+                2.4vw,
+                1.3rem
+            );
+
+            line-height: 1.6;
+        }
+
+        .privacy-card p {
+            margin: 0 0 14px;
+
+            color: #374151;
+
+            font-size: clamp(
+                0.94rem,
+                1.8vw,
+                1.02rem
+            );
+        }
+
+        .privacy-card ul {
+            margin: 8px 0 18px;
+            padding-left: 28px;
+            color: #374151;
+        }
+
+        .privacy-card li {
+            margin-bottom: 6px;
 
+            font-size: clamp(
+                0.93rem,
+                1.7vw,
+                1rem
+            );
+        }
+
+        .email {
+            color: #2f8164;
+            font-weight: 600;
+            text-decoration: none;
+            word-break: break-word;
+        }
 
+        .email:hover {
+            color: #287b60;
+            text-decoration: underline;
+        }
+
+        .agreement {
+            margin-top: 30px !important;
+            padding-top: 22px;
 
-<h3>3. Connexion Internet</h3>
+            border-top:
+                1px solid
+                rgba(31, 41, 55, 0.1);
 
-<p>
-    L'application utilise une connexion Internet uniquement aux fins
-    suivantes :
-</p>
+            color: #287b60 !important;
+            font-weight: 600;
+        }
 
-<ul>
-    <li>Synchroniser le contenu avec le serveur.</li>
+        .page-footer {
+            padding: 0 20px 30px;
 
-    <li>
-        Télécharger ou mettre à jour les textes, images, fichiers audio
-        ou vidéos lorsqu'une mise à jour est disponible.
-    </li>
+            text-align: center;
 
-    <li>
-        Améliorer le contenu affiché dans l'application.
-    </li>
-</ul>
+            color: #4b5563;
+            font-size: 0.85rem;
+        }
 
-<p>
-    La connexion Internet n'est pas utilisée pour collecter des
-    informations personnelles sur l'utilisateur.
-</p>
+        .page-footer a {
+            color: #2f8164;
+            text-decoration: none;
+        }
 
+        .page-footer a:hover {
+            text-decoration: underline;
+        }
 
+        @media (max-width: 480px) {
 
-<h3>4. Notifications</h3>
+            .page-header {
+                padding:
+                    22px
+                    14px
+                    18px;
+            }
 
-<p>
-    L'application utilise des notifications locales pour rappeler à
-    l'utilisateur de prier sur le Prophète ﷺ, conformément aux
-    paramètres qu'il a lui-même sélectionnés.
-</p>
+            .content-wrapper {
+                padding:
+                    0
+                    10px
+                    28px;
+            }
 
-<p>
-    Aucune notification publicitaire ou marketing n'est envoyée.
-</p>
+            .privacy-card {
+                border-radius: 17px;
+                padding: 20px 17px;
+            }
 
+            .privacy-card h2 {
+                margin-top: 28px;
+                padding-left: 9px;
+            }
 
+            .privacy-card ul {
+                padding-left: 22px;
+            }
+        }
+
+        @media (max-width: 330px) {
 
-<h3>5. Fichiers et audio</h3>
-
-<p>
-    L'application peut télécharger certains fichiers audio ou autres
-    contenus multimédias et les enregistrer dans l'espace de stockage
-    privé de l'application afin de permettre leur lecture efficacement.
-</p>
-
-<p>
-    Ces fichiers ne sont pas partagés avec des tiers.
-</p>
-
-
-
-<h3>6. Services de tiers</h3>
-
-<p>
-    L'application utilise certains services techniques nécessaires à
-    son fonctionnement, notamment :
-</p>
-
-<ul>
-    <li>
-        <strong>Supabase</strong> pour le stockage et la synchronisation
-        du contenu.
-    </li>
-</ul>
-
-<p>
-    Ces services ne sont pas utilisés pour vendre les données des
-    utilisateurs ni pour les partager à des fins publicitaires.
-</p>
-
-
-
-<h3>7. Protection des données</h3>
-
-<p>
-    Nous prenons des mesures appropriées pour protéger les données
-    utilisées par l'application et nous nous efforçons de réduire
-    au minimum la quantité de données stockées nécessaire au
-    fonctionnement de l'application.
-</p>
-
-
-
-<h3>8. Vie privée des enfants</h3>
-
-<p>
-    L'application convient à toutes les catégories d'âge et ne collecte
-    pas sciemment de données personnelles auprès des enfants.
-</p>
-
-
-
-<h3>9. Partage des données</h3>
-
-<p>
-    Salli Ala Almustafa ﷺ ne vend, ne loue et ne partage pas les
-    données personnelles des utilisateurs avec des tiers.
-</p>
-
-
-
-<h3>10. Modifications de cette politique de confidentialité</h3>
-
-<p>
-    Cette politique de confidentialité peut être mise à jour lors de
-    l'ajout de nouvelles fonctionnalités ou en cas de nouvelles
-    exigences légales ou réglementaires.
-</p>
-
-<p>
-    Toute mise à jour sera publiée sur cette page avec une nouvelle
-    date de dernière modification.
-</p>
-
-
-
-<h3>11. Nous contacter</h3>
-
-<p>
-    Pour toute question ou remarque concernant cette politique de
-    confidentialité, vous pouvez nous contacter à l'adresse :
-</p>
-
-<p>
-    <strong>E-mail :</strong>
-    <a href="mailto:contact@masadereducation.com">
-        contact@masadereducation.com
-    </a>
-</p>
-
-
-
-<hr>
-
-
-<p>
-    En utilisant l'application Salli Ala Almustafa ﷺ,
-    vous acceptez cette politique de confidentialité.
-</p>
-
-
-</article>
-
-
-
-<footer>
-
-<p>
-    Salli Ala Almustafa ﷺ
-</p>
-
-<p>
-    Développé par Masader Al-Elm Educational
-</p>
-
-<p>
-    <a href="mailto:contact@masadereducation.com">
-        contact@masadereducation.com
-    </a>
-</p>
-
-</footer>
+            .privacy-card {
+                padding: 18px 14px;
+            }
+
+            .privacy-card p,
+            .privacy-card li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header class="page-header">
+
+        <img
+            src="assets/logo.png"
+            alt="Logo de l’application Salli Ala Almustafa ﷺ"
+            class="logo"
+        >
+
+        <h1 class="app-name">
+            Salli Ala Almustafa ﷺ
+        </h1>
+
+        <p class="page-title">
+            Politique de confidentialité
+        </p>
+
+        <p class="page-subtitle">
+            Privacy Policy
+        </p>
+
+    </header>
+
+
+    <main class="content-wrapper">
+
+        <article class="privacy-card">
+
+            <span class="updated">
+                Dernière mise à jour : 10 août 2026
+            </span>
+
+            <h1>
+                Politique de confidentialité de l’application
+                Salli Ala Almustafa ﷺ
+            </h1>
+
+
+            <p>
+                Bienvenue dans l’application Salli Ala Almustafa ﷺ.
+                Nous nous engageons à protéger la vie privée de nos
+                utilisateurs. La présente Politique de confidentialité
+                explique comment l’application traite les informations
+                et les données lors de son utilisation.
+            </p>
+
+
+            <h2>
+                1. Informations collectées par l’application
+            </h2>
+
+            <p>
+                L’application Salli Ala Almustafa ﷺ ne collecte,
+                ne demande et ne stocke aucune information personnelle
+                permettant d’identifier l’utilisateur, notamment :
+            </p>
+
+            <ul>
+                <li>Nom.</li>
+                <li>Adresse e-mail.</li>
+                <li>Numéro de téléphone.</li>
+                <li>Données de localisation géographique.</li>
+                <li>Contacts.</li>
+                <li>Photos personnelles.</li>
+                <li>Messages.</li>
+            </ul>
+
+            <p>
+                L’application ne nécessite pas la création d’un compte
+                ni la connexion à un compte pour utiliser ses
+                fonctionnalités essentielles.
+            </p>
+
+
+            <h2>
+                2. Données stockées localement sur l’appareil
+            </h2>
+
+            <p>
+                L’application enregistre certains paramètres
+                directement sur l’appareil de l’utilisateur afin
+                d’améliorer son expérience, notamment :
+            </p>
+
+            <ul>
+                <li>Le son de rappel sélectionné.</li>
+                <li>Les paramètres de rappel.</li>
+                <li>Les préférences de l’utilisateur.</li>
+                <li>
+                    Certains fichiers multimédias téléchargés
+                    pour être utilisés dans l’application.
+                </li>
+            </ul>
+
+            <p>
+                Ces données sont stockées dans l’espace de stockage
+                privé de l’application et ne sont pas accessibles
+                aux autres applications.
+            </p>
+
+
+            <h2>
+                3. Connexion à Internet
+            </h2>
+
+            <p>
+                L’application utilise une connexion Internet
+                uniquement aux fins suivantes :
+            </p>
+
+            <ul>
+                <li>Synchroniser le contenu avec le serveur.</li>
+                <li>
+                    Télécharger ou mettre à jour les textes,
+                    images, fichiers audio ou vidéos lorsque
+                    des mises à jour sont disponibles.
+                </li>
+                <li>
+                    Améliorer le contenu affiché dans l’application.
+                </li>
+            </ul>
+
+            <p>
+                La connexion Internet n’est pas utilisée pour
+                collecter des informations personnelles sur
+                les utilisateurs.
+            </p>
+
+
+            <h2>
+                4. Notifications
+            </h2>
+
+            <p>
+                L’application utilise des notifications locales
+                afin de rappeler à l’utilisateur de prier sur
+                le Prophète ﷺ conformément aux paramètres qu’il
+                a lui-même choisis.
+            </p>
+
+            <p>
+                L’application n’envoie aucune notification
+                promotionnelle ou commerciale.
+            </p>
+
+
+            <h2>
+                5. Fichiers et fichiers audio
+            </h2>
+
+            <p>
+                L’application peut télécharger certains fichiers
+                audio ou autres contenus multimédias et les stocker
+                dans son espace de stockage privé afin de permettre
+                une lecture efficace. Ces fichiers ne sont partagés
+                avec aucun tiers.
+            </p>
+
+
+            <h2>
+                6. Services tiers
+            </h2>
+
+            <p>
+                L’application utilise certains services techniques
+                nécessaires à son fonctionnement, notamment :
+            </p>
+
+            <ul>
+                <li>
+                    Supabase pour le stockage et la synchronisation
+                    du contenu.
+                </li>
+            </ul>
+
+            <p>
+                Ces services ne sont pas utilisés pour vendre les
+                données des utilisateurs ni pour les partager à
+                des fins publicitaires.
+            </p>
+
+
+            <h2>
+                7. Protection des données
+            </h2>
+
+            <p>
+                Nous prenons des mesures appropriées pour protéger
+                les données utilisées par l’application et nous
+                nous efforçons de limiter la quantité de données
+                stockées à ce qui est strictement nécessaire au
+                fonctionnement de l’application.
+            </p>
+
+
+            <h2>
+                8. Vie privée des enfants
+            </h2>
+
+            <p>
+                L’application convient aux utilisateurs de tous âges
+                et ne collecte pas sciemment d’informations personnelles
+                auprès des enfants.
+            </p>
+
+
+            <h2>
+                9. Partage des données
+            </h2>
+
+            <p>
+                L’application Salli Ala Almustafa ﷺ ne vend,
+                ne loue et ne partage les informations personnelles
+                des utilisateurs avec aucun tiers.
+            </p>
+
+
+            <h2>
+                10. Modifications de la présente Politique de confidentialité
+            </h2>
+
+            <p>
+                La présente Politique de confidentialité peut être
+                mise à jour lors de l’ajout de nouvelles fonctionnalités
+                ou en cas de nouvelles exigences légales ou réglementaires.
+            </p>
+
+            <p>
+                Toute modification sera publiée sur cette page avec
+                une nouvelle date de mise à jour.
+            </p>
+
+
+            <h2>
+                11. Nous contacter
+            </h2>
+
+            <p>
+                Si vous avez des questions ou des remarques concernant
+                la présente Politique de confidentialité, vous pouvez
+                nous contacter à l’adresse suivante :
+            </p>
+
+            <p>
+                <strong>E-mail :</strong>
+                <a
+                    class="email"
+                    href="mailto:contact@masadereducation.com"
+                >
+                    contact@masadereducation.com
+                </a>
+            </p>
+
+
+            <p class="agreement">
+                En utilisant l’application Salli Ala Almustafa ﷺ,
+                vous acceptez la présente Politique de confidentialité.
+            </p>
+
+        </article>
+
+    </main>
+
+
+    <footer class="page-footer">
+
+        <p>
+            Developed by Masader Al-Elm Educational
+        </p>
+
+        <a href="mailto:contact@masadereducation.com">
+            contact@masadereducation.com
+        </a>
+
+    </footer>
+
+</body>
+</html>
+```
