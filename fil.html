@@ -1,276 +1,596 @@
+```html
 <!DOCTYPE html>
 <html lang="fil" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Patakaran sa Privacy - Salli Ala Almustafa ﷺ</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta
+        name="description"
+        content="Patakaran sa Privacy ng Salli Ala Almustafa ﷺ application."
+    >
+
+    <meta
+        name="theme-color"
+        content="#2f8164"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logo.png"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f6f5;
+            color: #1f2937;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+
+            overflow-x: hidden;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 32px 20px 24px;
+        }
+
+        .logo {
+            display: block;
+
+            width: clamp(85px, 13vw, 130px);
+            height: clamp(85px, 13vw, 130px);
+
+            max-width: 100%;
+            max-height: 100%;
+
+            object-fit: contain;
+
+            margin: 0 auto 18px;
+        }
+
+        .app-name {
+            margin: 0;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.35rem,
+                3.5vw,
+                2rem
+            );
+
+            font-weight: 700;
+        }
+
+        .page-title {
+            margin: 6px 0 0;
+
+            color: #1f2937;
+
+            font-size: clamp(
+                1.15rem,
+                2.5vw,
+                1.45rem
+            );
+
+            font-weight: 600;
+        }
+
+        .page-subtitle {
+            margin: 2px 0 0;
+
+            color: #4b5563;
+
+            font-size: 0.95rem;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 0 18px 40px;
+        }
+
+        .privacy-card {
+            background: #ffffff;
+
+            border:
+                1px solid
+                rgba(47, 129, 100, 0.08);
+
+            border-radius: 22px;
+
+            padding:
+                clamp(22px, 5vw, 48px);
+
+            box-shadow:
+                0 12px 35px
+                rgba(31, 41, 55, 0.07),
+                0 2px 8px
+                rgba(31, 41, 55, 0.03);
+        }
+
+        .updated {
+            display: inline-block;
+
+            margin-bottom: 22px;
+
+            padding: 6px 13px;
+
+            background:
+                rgba(47, 129, 100, 0.08);
+
+            color: #287b60;
+
+            border-radius: 999px;
+
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .privacy-card h1 {
+            margin: 0 0 14px;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.4rem,
+                3vw,
+                1.85rem
+            );
+
+            line-height: 1.5;
+        }
+
+        .privacy-card h2 {
+            margin: 34px 0 10px;
+
+            padding-left: 12px;
+
+            border-left:
+                4px solid
+                #2f8164;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.08rem,
+                2.4vw,
+                1.3rem
+            );
+
+            line-height: 1.6;
+        }
+
+        .privacy-card p {
+            margin: 0 0 14px;
+
+            color: #374151;
+
+            font-size: clamp(
+                0.94rem,
+                1.8vw,
+                1.02rem
+            );
+        }
+
+        .privacy-card ul {
+            margin: 8px 0 18px;
+            padding-left: 28px;
+            color: #374151;
+        }
+
+        .privacy-card li {
+            margin-bottom: 6px;
+
+            font-size: clamp(
+                0.93rem,
+                1.7vw,
+                1rem
+            );
+        }
+
+        .email {
+            color: #2f8164;
+
+            font-weight: 600;
+
+            text-decoration: none;
+
+            word-break: break-word;
+        }
+
+        .email:hover {
+            color: #287b60;
+            text-decoration: underline;
+        }
+
+        .agreement {
+            margin-top: 30px !important;
+
+            padding-top: 22px;
+
+            border-top:
+                1px solid
+                rgba(31, 41, 55, 0.1);
+
+            color: #287b60 !important;
+
+            font-weight: 600;
+        }
+
+        .page-footer {
+            padding:
+                0
+                20px
+                30px;
+
+            text-align: center;
+
+            color: #4b5563;
+
+            font-size: 0.85rem;
+        }
+
+        .page-footer a {
+            color: #2f8164;
+            text-decoration: none;
+        }
+
+        .page-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+
+            .page-header {
+                padding:
+                    22px
+                    14px
+                    18px;
+            }
+
+            .content-wrapper {
+                padding:
+                    0
+                    10px
+                    28px;
+            }
+
+            .privacy-card {
+                border-radius: 17px;
+                padding: 20px 17px;
+            }
+
+            .privacy-card h2 {
+                margin-top: 28px;
+                padding-left: 9px;
+            }
+
+            .privacy-card ul {
+                padding-left: 22px;
+            }
+        }
+
+        @media (max-width: 330px) {
+
+            .privacy-card {
+                padding: 18px 14px;
+            }
+
+            .privacy-card p,
+            .privacy-card li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
+
 
 <body>
 
-<header class="site-header">
+    <header class="page-header">
 
-    <img src="assets/logo.png"
-         alt="Logo ng Salli Ala Almustafa ﷺ"
-         class="logo">
+        <img
+            src="assets/logo.png"
+            alt="Logo ng Salli Ala Almustafa ﷺ application"
+            class="logo"
+        >
 
-    <h1>Salli Ala Almustafa ﷺ</h1>
+        <h1 class="app-name">
+            Salli Ala Almustafa ﷺ
+        </h1>
 
-    <div class="subtitle">
-        Patakaran sa Privacy
-    </div>
-
-</header>
-
-
-<main class="policy-container">
-
-    <div class="language-selector">
-        <a href="ar.html">العربية</a>
-        <a href="en.html">English</a>
-        <a href="fr.html">Français</a>
-        <a href="es.html">Español</a>
-        <a href="id.html">Bahasa Indonesia</a>
-        <a href="ru.html">Русский</a>
-        <a href="tr.html">Türkçe</a>
-        <a href="ur.html">اردو</a>
-        <a href="zh.html">中文</a>
-        <a href="uk.html">Українська</a>
-        <a href="sw.html">Kiswahili</a>
-        <a href="bn.html">বাংলা</a>
-        <a href="so.html">Soomaali</a>
-        <a href="fil.html" class="active">Filipino</a>
-        <a href="ku.html">کوردی</a>
-    </div>
-
-
-    <article class="policy">
-
-        <h2>Patakaran sa Privacy ng Salli Ala Almustafa ﷺ</h2>
-
-        <p>
-            <strong>Huling na-update:</strong> Hulyo 27, 2026
+        <p class="page-title">
+            Patakaran sa Privacy
         </p>
 
-        <p>
-            Maligayang pagdating sa Salli Ala Almustafa ﷺ.
-            Pinahahalagahan namin ang privacy ng aming mga gumagamit.
-            Ipinapaliwanag ng patakarang ito kung paano namin
-            pinangangasiwaan ang impormasyon at data habang ginagamit
-            ang application.
+        <p class="page-subtitle">
+            Privacy Policy
         </p>
 
+    </header>
 
-        <h3>1. Impormasyong Kinokolekta ng Application</h3>
+
+    <main class="content-wrapper">
+
+        <article class="privacy-card">
+
+            <span class="updated">
+                Huling na-update: Agosto 10, 2026
+            </span>
+
+            <h1>
+                Patakaran sa Privacy ng Salli Ala Almustafa ﷺ
+            </h1>
+
+
+            <p>
+                Maligayang pagdating sa Salli Ala Almustafa ﷺ application.
+                Pinahahalagahan namin ang pagprotekta sa privacy ng aming
+                mga user. Ipinapaliwanag ng Patakaran sa Privacy na ito
+                kung paano pinangangasiwaan ng application ang impormasyon
+                at data habang ginagamit ito.
+            </p>
+
+
+            <h2>
+                1. Impormasyong Kinokolekta ng Application
+            </h2>
+
+            <p>
+                Ang Salli Ala Almustafa ﷺ application ay hindi nangongolekta,
+                humihingi, o nag-iimbak ng anumang personal na impormasyon
+                na maaaring gamitin upang makilala ang user, kabilang ang:
+            </p>
+
+            <ul>
+                <li>Pangalan.</li>
+                <li>Email address.</li>
+                <li>Numero ng telepono.</li>
+                <li>Lokasyon o geographic location.</li>
+                <li>Mga contact.</li>
+                <li>Mga personal na larawan.</li>
+                <li>Mga mensahe.</li>
+            </ul>
+
+            <p>
+                Hindi kinakailangang gumawa ng account o mag-log in upang
+                magamit ang mga pangunahing serbisyo ng application.
+            </p>
+
+
+            <h2>
+                2. Data na Lokal na Iniimbak sa Device
+            </h2>
+
+            <p>
+                Upang mapahusay ang karanasan ng user, ang application ay
+                nag-iimbak ng ilang setting nang direkta sa device ng user,
+                tulad ng:
+            </p>
+
+            <ul>
+                <li>Napiling tunog para sa mga paalala.</li>
+                <li>Mga setting ng paalala.</li>
+                <li>Mga preference ng user.</li>
+                <li>
+                    Ilang media file na dina-download upang gamitin
+                    sa loob ng application.
+                </li>
+            </ul>
+
+            <p>
+                Ang data na ito ay iniimbak sa pribadong storage ng
+                application at hindi ito maaaring ma-access ng ibang
+                applications.
+            </p>
+
+
+            <h2>
+                3. Koneksyon sa Internet
+            </h2>
+
+            <p>
+                Ginagamit lamang ng application ang koneksyon sa Internet
+                para sa mga sumusunod na layunin:
+            </p>
+
+            <ul>
+                <li>
+                    Pag-synchronize ng content sa server.
+                </li>
+
+                <li>
+                    Pag-download o pag-update ng mga text, larawan,
+                    audio, o video kapag may available na update.
+                </li>
+
+                <li>
+                    Pagpapahusay ng content na ipinapakita sa application.
+                </li>
+            </ul>
+
+            <p>
+                Hindi ginagamit ang Internet connection upang mangolekta
+                ng personal na impormasyon ng user.
+            </p>
+
+
+            <h2>
+                4. Mga Notification
+            </h2>
+
+            <p>
+                Gumagamit ang application ng local notifications upang
+                paalalahanan ang user na magpadala ng salawat para sa
+                Propeta Muhammad ﷺ, ayon sa mga setting na pinili mismo
+                ng user.
+            </p>
+
+            <p>
+                Hindi nagpapadala ang application ng anumang advertising
+                o marketing notifications.
+            </p>
+
+
+            <h2>
+                5. Mga File at Audio
+            </h2>
+
+            <p>
+                Maaaring mag-download ang application ng ilang audio file
+                o iba pang media content at i-save ang mga ito sa pribadong
+                storage ng application upang mahusay na ma-play ang mga ito.
+                Hindi ibinabahagi ang mga file na ito sa anumang third party.
+            </p>
+
+
+            <h2>
+                6. Mga Third-Party Service
+            </h2>
+
+            <p>
+                Gumagamit ang application ng ilang teknikal na serbisyo
+                na kinakailangan para sa pagpapatakbo nito, kabilang ang:
+            </p>
+
+            <ul>
+                <li>
+                    Supabase para sa pag-iimbak at pag-synchronize
+                    ng content.
+                </li>
+            </ul>
+
+            <p>
+                Hindi ginagamit ang mga serbisyong ito upang ibenta ang
+                data ng user o ibahagi ito para sa mga layunin ng advertising.
+            </p>
+
+
+            <h2>
+                7. Proteksyon ng Data
+            </h2>
+
+            <p>
+                Gumagawa kami ng naaangkop na mga hakbang upang maprotektahan
+                ang data na ginagamit ng application at sinisikap naming
+                panatilihin ang dami ng nakaimbak na data sa pinakamababang
+                antas na kinakailangan para sa pagpapatakbo ng application.
+            </p>
+
+
+            <h2>
+                8. Privacy ng mga Bata
+            </h2>
+
+            <p>
+                Ang application ay angkop para sa mga user sa lahat ng edad
+                at hindi sadyang nangongolekta ng personal na impormasyon
+                mula sa mga bata.
+            </p>
+
+
+            <h2>
+                9. Pagbabahagi ng Data
+            </h2>
+
+            <p>
+                Ang Salli Ala Almustafa ﷺ application ay hindi nagbebenta,
+                nagpapaupa, o nagbabahagi ng personal na impormasyon ng
+                user sa anumang third party.
+            </p>
+
+
+            <h2>
+                10. Mga Pagbabago sa Patakaran sa Privacy
+            </h2>
+
+            <p>
+                Maaaring i-update ang Patakaran sa Privacy na ito kapag
+                nagdagdag ng mga bagong feature o kapag may mga bagong
+                legal o regulatory requirements.
+            </p>
+
+            <p>
+                Ang anumang update ay ilalathala sa pahinang ito at
+                ia-update din ang petsa ng huling pagbabago.
+            </p>
+
+
+            <h2>
+                11. Makipag-ugnayan sa Amin
+            </h2>
+
+            <p>
+                Kung mayroon kang anumang tanong o komento tungkol sa
+                Patakaran sa Privacy na ito, maaari kang makipag-ugnayan
+                sa amin sa pamamagitan ng:
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+
+                <a
+                    class="email"
+                    href="mailto:contact@masadereducation.com"
+                >
+                    contact@masadereducation.com
+                </a>
+            </p>
+
+
+            <p class="agreement">
+                Sa paggamit ng Salli Ala Almustafa ﷺ application,
+                sumasang-ayon ka sa Patakaran sa Privacy na ito.
+            </p>
+
+        </article>
+
+    </main>
+
+
+    <footer class="page-footer">
 
         <p>
-            Ang Salli Ala Almustafa ﷺ ay hindi nangongolekta,
-            humihingi, o nag-iimbak ng anumang personal na impormasyon
-            na maaaring gamitin upang makilala ang gumagamit, tulad ng:
+            Developed by Masader Al-Elm Educational
         </p>
 
-        <ul>
-            <li>Pangalan.</li>
-            <li>Email address.</li>
-            <li>Numero ng telepono.</li>
-            <li>Lokasyon.</li>
-            <li>Mga contact.</li>
-            <li>Mga personal na larawan.</li>
-            <li>Mga mensahe.</li>
-        </ul>
-
-        <p>
-            Hindi kinakailangan ng application na gumawa ng account
-            o mag-log in upang magamit ang mga pangunahing serbisyo nito.
-        </p>
-
-
-        <h3>2. Data na Nakaimbak sa Device</h3>
-
-        <p>
-            Ang application ay nagse-save ng ilang setting sa device
-            ng gumagamit lamang upang mapahusay ang karanasan sa paggamit,
-            tulad ng:
-        </p>
-
-        <ul>
-            <li>Napiling tunog para sa mga paalala.</li>
-            <li>Mga setting ng paalala.</li>
-            <li>Mga kagustuhan ng gumagamit.</li>
-            <li>
-                Ilang media file na dina-download upang magamit
-                sa loob ng application.
-            </li>
-        </ul>
-
-        <p>
-            Ang data na ito ay iniimbak sa pribadong storage ng application
-            at hindi maaaring ma-access ng ibang applications.
-        </p>
-
-
-        <h3>3. Koneksyon sa Internet</h3>
-
-        <p>
-            Gumagamit ang application ng internet para lamang sa mga
-            sumusunod na layunin:
-        </p>
-
-        <ul>
-            <li>
-                Pag-synchronize ng content sa server.
-            </li>
-
-            <li>
-                Pag-download o pag-update ng mga teksto, larawan,
-                audio, o video kapag may available na mga update.
-            </li>
-
-            <li>
-                Pagpapahusay ng content na ipinapakita sa application.
-            </li>
-        </ul>
-
-        <p>
-            Hindi ginagamit ang koneksyon sa internet upang mangolekta
-            ng personal na impormasyon tungkol sa gumagamit.
-        </p>
-
-
-        <h3>4. Mga Notification</h3>
-
-        <p>
-            Gumagamit ang application ng mga lokal na notification
-            upang paalalahanan ang gumagamit na magpadala ng salawat
-            kay Propeta Muhammad ﷺ, ayon sa mga setting na pinili
-            mismo ng gumagamit.
-        </p>
-
-        <p>
-            Walang ipinapadalang advertising o marketing notification.
-        </p>
-
-
-        <h3>5. Mga File at Audio</h3>
-
-        <p>
-            Maaaring mag-download ang application ng ilang audio
-            o media file at i-save ang mga ito sa pribadong storage
-            ng application upang mahusay na mapatugtog ang mga ito.
-        </p>
-
-        <p>
-            Ang mga file na ito ay hindi ibinabahagi sa anumang
-            third party.
-        </p>
-
-
-        <h3>6. Mga Third-Party Service</h3>
-
-        <p>
-            Gumagamit ang application ng ilang teknikal na serbisyo
-            na kinakailangan para sa operasyon nito, tulad ng:
-        </p>
-
-        <ul>
-            <li>
-                <strong>Supabase</strong> — para sa pag-iimbak at
-                pag-synchronize ng content.
-            </li>
-        </ul>
-
-        <p>
-            Ang mga serbisyong ito ay hindi ginagamit upang ibenta
-            ang data ng gumagamit o ibahagi ito para sa advertising.
-        </p>
-
-
-        <h3>7. Proteksyon ng Data</h3>
-
-        <p>
-            Gumagawa kami ng naaangkop na mga hakbang upang maprotektahan
-            ang data na ginagamit ng application at sinisikap naming
-            bawasan ang dami ng data na iniimbak sa pinakamababang
-            antas na kinakailangan upang mapatakbo ang application.
-        </p>
-
-
-        <h3>8. Privacy ng mga Bata</h3>
-
-        <p>
-            Ang application ay angkop para sa lahat ng edad at hindi
-            sinasadyang nangongolekta ng personal na impormasyon
-            mula sa mga bata.
-        </p>
-
-
-        <h3>9. Pagbabahagi ng Data</h3>
-
-        <p>
-            Ang Salli Ala Almustafa ﷺ ay hindi nagbebenta,
-            nagpapaupa, o nagbabahagi ng personal na data ng gumagamit
-            sa anumang third party.
-        </p>
-
-
-        <h3>10. Mga Pagbabago sa Patakaran sa Privacy</h3>
-
-        <p>
-            Maaaring baguhin o i-update ang patakarang ito kapag
-            nagdagdag ng mga bagong feature o kapag may mga bagong
-            legal o regulatory requirement.
-        </p>
-
-        <p>
-            Ang anumang update ay ilalathala sa pahinang ito kasama
-            ang bagong petsa ng huling pagbabago.
-        </p>
-
-
-        <h3>11. Makipag-ugnayan sa Amin</h3>
-
-        <p>
-            Kung mayroon kang anumang tanong o komento tungkol
-            sa patakarang ito, maaari kang makipag-ugnayan sa amin sa:
-        </p>
-
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:contact@masadereducation.com">
-                contact@masadereducation.com
-            </a>
-        </p>
-
-
-        <hr>
-
-        <p>
-            Sa paggamit ng Salli Ala Almustafa ﷺ,
-            sumasang-ayon ka sa patakarang ito sa privacy.
-        </p>
-
-    </article>
-
-</main>
-
-
-<footer>
-
-    <p>
-        Developed by Masader Al-Elm Educational
-    </p>
-
-    <p>
         <a href="mailto:contact@masadereducation.com">
             contact@masadereducation.com
         </a>
-    </p>
 
-</footer>
+    </footer>
 
 </body>
 </html>
+```
