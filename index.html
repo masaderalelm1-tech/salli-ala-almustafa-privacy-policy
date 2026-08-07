@@ -4,145 +4,339 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Privacy Policy - Salli Ala Almustafa ﷺ</title>
+    <title>Privacy Policy - Salli Ala Almustafa</title>
 
-    <meta
-        name="description"
-        content="Privacy Policy for Salli Ala Almustafa ﷺ application."
-    >
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f5;
+            color: #1f2937;
+        }
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="assets/favicon.png"
-    >
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            padding: 30px 20px 40px;
+        }
+
+        /* Logo */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 210px;
+            max-width: 80%;
+            height: auto;
+            display: inline-block;
+        }
+
+        /* App title */
+        .app-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .app-title h1 {
+            margin: 0;
+            font-size: 34px;
+            color: #287b60;
+            font-weight: 700;
+        }
+
+        .app-title .privacy-title {
+            margin-top: 10px;
+            font-size: 23px;
+            color: #4b5563;
+        }
+
+        .app-title .privacy-arabic {
+            margin-top: 4px;
+            font-size: 17px;
+            color: #6b7280;
+            direction: rtl;
+        }
+
+        /* Main card */
+        .language-card {
+            width: min(1100px, 95%);
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 22px;
+            padding: 50px 50px 48px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .language-title {
+            text-align: center;
+            margin: 0 0 30px;
+            font-size: 30px;
+            color: #1f2937;
+        }
+
+        .language-subtitle {
+            text-align: center;
+            direction: rtl;
+            margin: -15px 0 30px;
+            font-size: 19px;
+            color: #4b5563;
+        }
+
+        /* Language buttons */
+        .languages {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+        }
+
+        .language-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 62px;
+            padding: 12px 10px;
+
+            background: #2f8164;
+            color: #ffffff;
+
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: 500;
+
+            border-radius: 10px;
+
+            transition:
+                background-color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .language-button:hover {
+            background: #256b53;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+        }
+
+        .language-button:active {
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        footer {
+            width: min(1100px, 95%);
+            margin: 35px auto 0;
+            text-align: center;
+            color: #4b5563;
+        }
+
+        footer p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: #2f8164;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Tablet */
+        @media (max-width: 900px) {
+            .languages {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .language-card {
+                padding: 40px 30px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .page {
+                padding: 20px 12px 30px;
+            }
+
+            .logo {
+                width: 160px;
+            }
+
+            .app-title h1 {
+                font-size: 27px;
+            }
+
+            .app-title .privacy-title {
+                font-size: 20px;
+            }
+
+            .language-card {
+                width: 100%;
+                padding: 30px 18px;
+                border-radius: 18px;
+            }
+
+            .language-title {
+                font-size: 25px;
+            }
+
+            .languages {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .language-button {
+                min-height: 56px;
+                font-size: 17px;
+            }
+
+            footer {
+                width: 100%;
+            }
+        }
+
+        /* Very small screens */
+        @media (max-width: 380px) {
+            .languages {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <main class="policy-container">
+<div class="page">
 
-        <!-- Logo -->
-        <div class="logo-container">
-            <img
-                src="assets/logo.png"
-                alt="Salli Ala Almustafa ﷺ"
-                class="logo"
-            >
+    <!-- Logo -->
+    <div class="logo-container">
+        <img
+            src="assets/logo.png"
+            alt="Salli Ala Almustafa Logo"
+            class="logo"
+        >
+    </div>
+
+    <!-- App title -->
+    <div class="app-title">
+
+        <h1 dir="rtl">
+            صلِّ على المصطفى ﷺ
+        </h1>
+
+        <div class="privacy-title">
+            Privacy Policy
         </div>
 
+        <div class="privacy-arabic">
+            سياسة الخصوصية
+        </div>
 
-        <!-- Title -->
-        <section class="welcome-section">
+    </div>
 
-            <h1>
-                Privacy Policy
-            </h1>
+    <!-- Language selection -->
+    <div class="language-card">
 
-            <p>
-                سياسة الخصوصية
-            </p>
+        <h2 class="language-title">
+            Select Language
+        </h2>
 
-        </section>
+        <div class="language-subtitle">
+            اختر اللغة
+        </div>
 
+        <div class="languages">
 
-        <!-- Language Selection -->
-        <section class="language-section">
+            <a class="language-button" href="ar.html">
+                العربية
+            </a>
 
-            <h2>
-                Select Language
-            </h2>
+            <a class="language-button" href="en.html">
+                English
+            </a>
 
-            <p class="language-subtitle">
-                اختر اللغة
-            </p>
+            <a class="language-button" href="id.html">
+                Bahasa Indonesia
+            </a>
 
+            <a class="language-button" href="ru.html">
+                Русский
+            </a>
 
-            <div class="language-list">
+            <a class="language-button" href="fr.html">
+                Français
+            </a>
 
-                <a href="ar.html">
-                    العربية
-                </a>
+            <a class="language-button" href="ur.html">
+                اردو
+            </a>
 
-                <a href="en.html">
-                    English
-                </a>
+            <a class="language-button" href="tr.html">
+                Türkçe
+            </a>
 
-                <a href="id.html">
-                    Bahasa Indonesia
-                </a>
+            <a class="language-button" href="zh.html">
+                中文
+            </a>
 
-                <a href="ru.html">
-                    Русский
-                </a>
+            <a class="language-button" href="uk.html">
+                Українська
+            </a>
 
-                <a href="fr.html">
-                    Français
-                </a>
+            <a class="language-button" href="sw.html">
+                Kiswahili
+            </a>
 
-                <a href="ur.html">
-                    اردو
-                </a>
+            <a class="language-button" href="es.html">
+                Español
+            </a>
 
-                <a href="tr.html">
-                    Türkçe
-                </a>
+            <a class="language-button" href="bn.html">
+                বাংলা
+            </a>
 
-                <a href="zh.html">
-                    中文
-                </a>
+            <a class="language-button" href="so.html">
+                Soomaali
+            </a>
 
-                <a href="uk.html">
-                    Українська
-                </a>
+            <a class="language-button" href="fil.html">
+                Filipino
+            </a>
 
-                <a href="sw.html">
-                    Kiswahili
-                </a>
+            <a class="language-button" href="ku.html">
+                کوردی
+            </a>
 
-                <a href="es.html">
-                    Español
-                </a>
+        </div>
 
-                <a href="bn.html">
-                    বাংলা
-                </a>
+    </div>
 
-                <a href="so.html">
-                    Soomaali
-                </a>
+    <!-- Footer -->
+    <footer>
 
-                <a href="fil.html">
-                    Filipino
-                </a>
+        <p>
+            Developed by Masader Al-Elm Educational
+        </p>
 
-                <a href="ku.html">
-                    کوردی
-                </a>
+        <p>
+            <a href="mailto:contact@masadereducation.com">
+                contact@masadereducation.com
+            </a>
+        </p>
 
-            </div>
+    </footer>
 
-        </section>
-
-
-        <!-- Footer -->
-        <footer class="site-footer">
-
-            <p>
-                Developed by Masader Al-Elm Educational
-            </p>
-
-            <p>
-                <a href="mailto:contact@masadereducation.com">
-                    contact@masadereducation.com
-                </a>
-            </p>
-
-        </footer>
-
-    </main>
+</div>
 
 </body>
 </html>
