@@ -1,267 +1,597 @@
+```html
 <!DOCTYPE html>
 <html lang="sw" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Sera ya Faragha - Salli Ala Almustafa ﷺ</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta
+        name="description"
+        content="Sera ya Faragha ya programu ya Salli Ala Almustafa ﷺ."
+    >
+
+    <meta
+        name="theme-color"
+        content="#2f8164"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logo.png"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f6f5;
+            color: #1f2937;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+
+            overflow-x: hidden;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 32px 20px 24px;
+        }
+
+        .logo {
+            display: block;
+
+            width: clamp(85px, 13vw, 130px);
+            height: clamp(85px, 13vw, 130px);
+
+            max-width: 100%;
+            max-height: 100%;
+
+            object-fit: contain;
+
+            margin: 0 auto 18px;
+        }
+
+        .app-name {
+            margin: 0;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.35rem,
+                3.5vw,
+                2rem
+            );
+
+            font-weight: 700;
+        }
+
+        .page-title {
+            margin: 6px 0 0;
+
+            color: #1f2937;
+
+            font-size: clamp(
+                1.15rem,
+                2.5vw,
+                1.45rem
+            );
+
+            font-weight: 600;
+        }
+
+        .page-subtitle {
+            margin: 2px 0 0;
+
+            color: #4b5563;
+
+            font-size: 0.95rem;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 0 18px 40px;
+        }
+
+        .privacy-card {
+            background: #ffffff;
+
+            border:
+                1px solid
+                rgba(47, 129, 100, 0.08);
+
+            border-radius: 22px;
+
+            padding:
+                clamp(22px, 5vw, 48px);
+
+            box-shadow:
+                0 12px 35px
+                rgba(31, 41, 55, 0.07),
+                0 2px 8px
+                rgba(31, 41, 55, 0.03);
+        }
+
+        .updated {
+            display: inline-block;
+
+            margin-bottom: 22px;
+
+            padding: 6px 13px;
+
+            background:
+                rgba(47, 129, 100, 0.08);
+
+            color: #287b60;
+
+            border-radius: 999px;
+
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .privacy-card h1 {
+            margin: 0 0 14px;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.4rem,
+                3vw,
+                1.85rem
+            );
+
+            line-height: 1.5;
+        }
+
+        .privacy-card h2 {
+            margin: 34px 0 10px;
+
+            padding-left: 12px;
+
+            border-left:
+                4px solid
+                #2f8164;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.08rem,
+                2.4vw,
+                1.3rem
+            );
+
+            line-height: 1.6;
+        }
+
+        .privacy-card p {
+            margin: 0 0 14px;
+
+            color: #374151;
+
+            font-size: clamp(
+                0.94rem,
+                1.8vw,
+                1.02rem
+            );
+        }
+
+        .privacy-card ul {
+            margin: 8px 0 18px;
+
+            padding-left: 28px;
+
+            color: #374151;
+        }
+
+        .privacy-card li {
+            margin-bottom: 6px;
+
+            font-size: clamp(
+                0.93rem,
+                1.7vw,
+                1rem
+            );
+        }
+
+        .email {
+            color: #2f8164;
+
+            font-weight: 600;
+
+            text-decoration: none;
+
+            word-break: break-word;
+        }
+
+        .email:hover {
+            color: #287b60;
+            text-decoration: underline;
+        }
+
+        .agreement {
+            margin-top: 30px !important;
+
+            padding-top: 22px;
+
+            border-top:
+                1px solid
+                rgba(31, 41, 55, 0.1);
+
+            color: #287b60 !important;
+
+            font-weight: 600;
+        }
+
+        .page-footer {
+            padding:
+                0
+                20px
+                30px;
+
+            text-align: center;
+
+            color: #4b5563;
+
+            font-size: 0.85rem;
+        }
+
+        .page-footer a {
+            color: #2f8164;
+
+            text-decoration: none;
+        }
+
+        .page-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+
+            .page-header {
+                padding:
+                    22px
+                    14px
+                    18px;
+            }
+
+            .content-wrapper {
+                padding:
+                    0
+                    10px
+                    28px;
+            }
+
+            .privacy-card {
+                border-radius: 17px;
+
+                padding:
+                    20px
+                    17px;
+            }
+
+            .privacy-card h2 {
+                margin-top: 28px;
+
+                padding-left: 9px;
+            }
+
+            .privacy-card ul {
+                padding-left: 22px;
+            }
+        }
+
+        @media (max-width: 330px) {
+
+            .privacy-card {
+                padding: 18px 14px;
+            }
+
+            .privacy-card p,
+            .privacy-card li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
+
 
 <body>
 
-<header class="site-header">
+    <header class="page-header">
 
-    <img src="assets/logo.png"
-         alt="Nembo ya Salli Ala Almustafa ﷺ"
-         class="logo">
+        <img
+            src="assets/logo.png"
+            alt="Nembo ya programu ya Salli Ala Almustafa ﷺ"
+            class="logo"
+        >
 
-    <h1>Salli Ala Almustafa ﷺ</h1>
+        <h1 class="app-name">
+            Salli Ala Almustafa ﷺ
+        </h1>
 
-    <div class="subtitle">
-        Sera ya Faragha
-    </div>
-
-</header>
-
-
-<main class="policy-container">
-
-    <div class="language-selector">
-        <a href="ar.html">العربية</a>
-        <a href="en.html">English</a>
-        <a href="fr.html">Français</a>
-        <a href="es.html">Español</a>
-        <a href="id.html">Bahasa Indonesia</a>
-        <a href="ru.html">Русский</a>
-        <a href="tr.html">Türkçe</a>
-        <a href="ur.html">اردو</a>
-        <a href="zh.html">中文</a>
-        <a href="uk.html">Українська</a>
-        <a href="sw.html" class="active">Kiswahili</a>
-        <a href="bn.html">বাংলা</a>
-        <a href="so.html">Soomaali</a>
-        <a href="fil.html">Filipino</a>
-        <a href="ku.html">کوردی</a>
-    </div>
-
-
-    <article class="policy">
-
-        <h2>Sera ya Faragha ya Programu ya Salli Ala Almustafa ﷺ</h2>
-
-        <p>
-            <strong>Ilisasishwa mwisho:</strong> 27 Julai 2026
+        <p class="page-title">
+            Sera ya Faragha
         </p>
 
-        <p>
-            Karibu kwenye programu ya Salli Ala Almustafa ﷺ.
-            Tunajali kulinda faragha ya watumiaji wetu.
-            Sera hii ya Faragha inaeleza jinsi programu inavyoshughulikia
-            taarifa na data wakati wa matumizi ya programu.
+        <p class="page-subtitle">
+            Privacy Policy
         </p>
 
+    </header>
 
-        <h3>1. Taarifa Zinazokusanywa na Programu</h3>
+
+    <main class="content-wrapper">
+
+        <article class="privacy-card">
+
+            <span class="updated">
+                Ilisasishwa mwisho: 10 Agosti 2026
+            </span>
+
+            <h1>
+                Sera ya Faragha ya Programu ya
+                Salli Ala Almustafa ﷺ
+            </h1>
+
+
+            <p>
+                Karibu kwenye programu ya Salli Ala Almustafa ﷺ.
+                Tunazingatia sana kulinda faragha ya watumiaji wetu.
+                Sera hii ya Faragha inaeleza jinsi programu
+                inavyoshughulikia taarifa na data wakati wa matumizi
+                ya programu.
+            </p>
+
+
+            <h2>
+                1. Taarifa Zinazokusanywa na Programu
+            </h2>
+
+            <p>
+                Programu ya Salli Ala Almustafa ﷺ haikusanyi,
+                haiombi wala kuhifadhi taarifa binafsi zinazoweza
+                kutumiwa kumtambua mtumiaji, kama vile:
+            </p>
+
+            <ul>
+                <li>Jina.</li>
+                <li>Anwani ya barua pepe.</li>
+                <li>Nambari ya simu.</li>
+                <li>Taarifa za eneo la kijiografia.</li>
+                <li>Orodha ya mawasiliano.</li>
+                <li>Picha binafsi.</li>
+                <li>Ujumbe.</li>
+            </ul>
+
+            <p>
+                Haihitajiki kuunda akaunti au kuingia kwenye mfumo
+                ili kutumia huduma za msingi za programu.
+            </p>
+
+
+            <h2>
+                2. Data Inayohifadhiwa Kwenye Kifaa
+            </h2>
+
+            <p>
+                Ili kuboresha matumizi ya programu, programu huhifadhi
+                baadhi ya mipangilio kwenye kifaa cha mtumiaji pekee,
+                kama vile:
+            </p>
+
+            <ul>
+                <li>Sauti iliyochaguliwa kwa vikumbusho.</li>
+                <li>Mipangilio ya vikumbusho.</li>
+                <li>Mapendeleo ya mtumiaji.</li>
+                <li>
+                    Baadhi ya faili za media zinazopakuliwa
+                    kwa matumizi ndani ya programu.
+                </li>
+            </ul>
+
+            <p>
+                Data hii huhifadhiwa katika nafasi ya kuhifadhi
+                inayotengwa kwa ajili ya programu na haiwezi
+                kufikiwa na programu nyingine.
+            </p>
+
+
+            <h2>
+                3. Muunganisho wa Intaneti
+            </h2>
+
+            <p>
+                Programu hutumia muunganisho wa Intaneti kwa madhumuni
+                yafuatayo pekee:
+            </p>
+
+            <ul>
+                <li>Kusawazisha maudhui na seva.</li>
+                <li>
+                    Kupakua au kusasisha maandishi, picha, sauti
+                    au video wakati masasisho yanapatikana.
+                </li>
+                <li>
+                    Kuboresha maudhui yanayoonyeshwa ndani ya programu.
+                </li>
+            </ul>
+
+            <p>
+                Muunganisho wa Intaneti hautumiki kukusanya taarifa
+                binafsi za mtumiaji.
+            </p>
+
+
+            <h2>
+                4. Arifa
+            </h2>
+
+            <p>
+                Programu hutumia arifa za ndani ya kifaa kumkumbusha
+                mtumiaji kumswalia Mtume Muhammad ﷺ kulingana na
+                mipangilio iliyochaguliwa na mtumiaji mwenyewe.
+            </p>
+
+            <p>
+                Programu haitumi arifa zozote za matangazo au
+                uuzaji wa bidhaa na huduma.
+            </p>
+
+
+            <h2>
+                5. Faili na Sauti
+            </h2>
+
+            <p>
+                Programu inaweza kupakua faili fulani za sauti au
+                maudhui mengine ya media na kuyahifadhi katika nafasi
+                ya kuhifadhi ya programu ili yaweze kucheza kwa ufanisi.
+                Faili hizi hazishirikishwi na wahusika wengine.
+            </p>
+
+
+            <h2>
+                6. Huduma za Wahusika Wengine
+            </h2>
+
+            <p>
+                Programu hutumia baadhi ya huduma za kiteknolojia
+                zinazohitajika ili kufanya kazi, ikiwa ni pamoja na:
+            </p>
+
+            <ul>
+                <li>
+                    Supabase kwa ajili ya kuhifadhi na kusawazisha maudhui.
+                </li>
+            </ul>
+
+            <p>
+                Huduma hizi hazitumiki kuuza data ya watumiaji
+                au kuishirikisha kwa madhumuni ya matangazo.
+            </p>
+
+
+            <h2>
+                7. Usalama wa Data
+            </h2>
+
+            <p>
+                Tunachukua hatua zinazofaa kulinda data inayotumiwa
+                na programu na tunajitahidi kupunguza kiasi cha data
+                kinachohifadhiwa hadi kiwango cha chini kinachohitajika
+                kwa ajili ya uendeshaji wa programu.
+            </p>
+
+
+            <h2>
+                8. Faragha ya Watoto
+            </h2>
+
+            <p>
+                Programu inafaa kwa watumiaji wa umri wote na
+                haikusanyi kwa makusudi taarifa binafsi kutoka kwa watoto.
+            </p>
+
+
+            <h2>
+                9. Kushirikisha Data
+            </h2>
+
+            <p>
+                Programu ya Salli Ala Almustafa ﷺ haiuzi,
+                haikodishi wala haishirikishi taarifa binafsi za
+                mtumiaji na mtu au taasisi yoyote ya tatu.
+            </p>
+
+
+            <h2>
+                10. Mabadiliko ya Sera ya Faragha
+            </h2>
+
+            <p>
+                Sera hii ya Faragha inaweza kusasishwa wakati wa
+                kuongeza vipengele vipya au endapo kutakuwa na
+                mahitaji mapya ya kisheria au udhibiti.
+            </p>
+
+            <p>
+                Taarifa kuhusu masasisho yoyote itachapishwa kwenye
+                ukurasa huu pamoja na kusasishwa kwa tarehe ya
+                mabadiliko ya mwisho.
+            </p>
+
+
+            <h2>
+                11. Wasiliana Nasi
+            </h2>
+
+            <p>
+                Ikiwa una maswali au maoni kuhusu Sera hii ya Faragha,
+                unaweza kuwasiliana nasi kupitia:
+            </p>
+
+            <p>
+                <strong>Barua pepe:</strong>
+
+                <a
+                    class="email"
+                    href="mailto:contact@masadereducation.com"
+                >
+                    contact@masadereducation.com
+                </a>
+            </p>
+
+
+            <p class="agreement">
+                Kwa kutumia programu ya Salli Ala Almustafa ﷺ,
+                unakubali Sera hii ya Faragha.
+            </p>
+
+        </article>
+
+    </main>
+
+
+    <footer class="page-footer">
 
         <p>
-            Programu ya Salli Ala Almustafa ﷺ haikusanyi,
-            haiombi wala kuhifadhi taarifa binafsi zinazoweza
-            kutumika kumtambua mtumiaji, kama vile:
+            Developed by Masader Al-Elm Educational
         </p>
 
-        <ul>
-            <li>Jina.</li>
-            <li>Anwani ya barua pepe.</li>
-            <li>Nambari ya simu.</li>
-            <li>Mahali alipo mtumiaji kijiografia.</li>
-            <li>Orodha ya anwani.</li>
-            <li>Picha binafsi.</li>
-            <li>Ujumbe.</li>
-        </ul>
-
-        <p>
-            Programu haihitaji kuunda akaunti au kuingia katika akaunti
-            ili kutumia huduma zake za msingi.
-        </p>
-
-
-        <h3>2. Data Inayohifadhiwa Kwenye Kifaa</h3>
-
-        <p>
-            Ili kuboresha matumizi ya programu, baadhi ya mipangilio
-            huhifadhiwa kwenye kifaa cha mtumiaji pekee, kama vile:
-        </p>
-
-        <ul>
-            <li>Sauti iliyochaguliwa kwa ukumbusho.</li>
-            <li>Mipangilio ya vikumbusho.</li>
-            <li>Mapendeleo ya mtumiaji.</li>
-            <li>
-                Baadhi ya faili za media zinazopakuliwa
-                kwa matumizi ndani ya programu.
-            </li>
-        </ul>
-
-        <p>
-            Data hii huhifadhiwa katika eneo la hifadhi binafsi la programu
-            na programu nyingine haziwezi kuifikia.
-        </p>
-
-
-        <h3>3. Muunganisho wa Mtandao</h3>
-
-        <p>
-            Programu hutumia muunganisho wa intaneti kwa madhumuni yafuatayo pekee:
-        </p>
-
-        <ul>
-            <li>Kusawazisha maudhui na seva.</li>
-
-            <li>
-                Kupakua au kusasisha maandishi, picha, sauti au video
-                wakati masasisho yanapatikana.
-            </li>
-
-            <li>
-                Kuboresha maudhui yanayoonyeshwa ndani ya programu.
-            </li>
-        </ul>
-
-        <p>
-            Muunganisho wa intaneti hautumiki kukusanya taarifa binafsi
-            kuhusu mtumiaji.
-        </p>
-
-
-        <h3>4. Arifa</h3>
-
-        <p>
-            Programu hutumia arifa za ndani ya kifaa kumkumbusha mtumiaji
-            kumswalia Mtume Muhammad ﷺ kulingana na mipangilio
-            anayochagua mwenyewe.
-        </p>
-
-        <p>
-            Hakuna arifa za matangazo au za masoko zinazotumwa.
-        </p>
-
-
-        <h3>5. Faili na Sauti</h3>
-
-        <p>
-            Programu inaweza kupakua baadhi ya faili za sauti au maudhui
-            mengine ya media na kuyahifadhi katika hifadhi binafsi ya
-            programu ili yaweze kuchezwa kwa ufanisi.
-        </p>
-
-        <p>
-            Faili hizi hazishirikishwi na mtu au taasisi yoyote ya nje.
-        </p>
-
-
-        <h3>6. Huduma za Wahusika wa Tatu</h3>
-
-        <p>
-            Programu hutumia baadhi ya huduma za kiteknolojia
-            zinazohitajika ili ifanye kazi, ikiwa ni pamoja na:
-        </p>
-
-        <ul>
-            <li>
-                <strong>Supabase</strong> — kwa kuhifadhi na kusawazisha maudhui.
-            </li>
-        </ul>
-
-        <p>
-            Huduma hizi hazitumiki kuuza data ya mtumiaji
-            wala kuishirikisha kwa madhumuni ya matangazo.
-        </p>
-
-
-        <h3>7. Usalama wa Data</h3>
-
-        <p>
-            Tunachukua hatua zinazofaa kulinda data inayotumiwa
-            na programu na tunajitahidi kupunguza kiasi cha data
-            kinachohifadhiwa hadi kiwango cha chini kinachohitajika
-            ili programu ifanye kazi.
-        </p>
-
-
-        <h3>8. Faragha ya Watoto</h3>
-
-        <p>
-            Programu inafaa kwa watu wa umri wote na hatukusanyi
-            kwa makusudi taarifa binafsi kutoka kwa watoto.
-        </p>
-
-
-        <h3>9. Kushirikisha Data</h3>
-
-        <p>
-            Salli Ala Almustafa ﷺ haiuzi, haikodishi wala
-            kushirikisha data binafsi ya watumiaji na mtu au taasisi
-            yoyote ya nje.
-        </p>
-
-
-        <h3>10. Mabadiliko ya Sera ya Faragha</h3>
-
-        <p>
-            Sera hii ya Faragha inaweza kusasishwa endapo vipengele
-            vipya vitaongezwa kwenye programu au ikiwa kutakuwa na
-            mahitaji mapya ya kisheria au udhibiti.
-        </p>
-
-        <p>
-            Masasisho yoyote yatachapishwa kwenye ukurasa huu
-            pamoja na tarehe ya mwisho ya kusasishwa.
-        </p>
-
-
-        <h3>11. Wasiliana Nasi</h3>
-
-        <p>
-            Ikiwa una maswali au maoni kuhusu Sera hii ya Faragha,
-            unaweza kuwasiliana nasi kupitia:
-        </p>
-
-        <p>
-            <strong>Barua pepe:</strong>
-            <a href="mailto:contact@masadereducation.com">
-                contact@masadereducation.com
-            </a>
-        </p>
-
-
-        <hr>
-
-        <p>
-            Kwa kutumia programu ya Salli Ala Almustafa ﷺ,
-            unakubali Sera hii ya Faragha.
-        </p>
-
-    </article>
-
-</main>
-
-
-<footer>
-
-    <p>
-        Imetengenezwa na Masader Al-Elm Educational
-    </p>
-
-    <p>
         <a href="mailto:contact@masadereducation.com">
             contact@masadereducation.com
         </a>
-    </p>
 
-</footer>
+    </footer>
 
 </body>
 </html>
+```
