@@ -1,265 +1,596 @@
+```html id="r9xk2m"
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>رازداری کی پالیسی - صلِّ على المصطفى ﷺ</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <title>رازداری کی پالیسی - Salli Ala Almustafa ﷺ</title>
+
+    <meta
+        name="description"
+        content="Salli Ala Almustafa ﷺ ایپلیکیشن کی رازداری کی پالیسی۔"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2f8164"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logo.png"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f6f5;
+            color: #1f2937;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Tahoma,
+                Arial,
+                sans-serif;
+
+            line-height: 1.9;
+            -webkit-font-smoothing: antialiased;
+
+            overflow-x: hidden;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 32px 20px 24px;
+        }
+
+        .logo {
+            display: block;
+
+            width: clamp(85px, 13vw, 130px);
+            height: clamp(85px, 13vw, 130px);
+
+            max-width: 100%;
+            max-height: 100%;
+
+            object-fit: contain;
+
+            margin: 0 auto 18px;
+        }
+
+        .app-name {
+            margin: 0;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.35rem,
+                3.5vw,
+                2rem
+            );
+
+            font-weight: 700;
+        }
+
+        .page-title {
+            margin: 6px 0 0;
+
+            color: #1f2937;
+
+            font-size: clamp(
+                1.15rem,
+                2.5vw,
+                1.45rem
+            );
+
+            font-weight: 600;
+        }
+
+        .page-subtitle {
+            margin: 2px 0 0;
+
+            color: #4b5563;
+
+            font-size: 0.95rem;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 0 18px 40px;
+        }
+
+        .privacy-card {
+            background: #ffffff;
+
+            border:
+                1px solid
+                rgba(47, 129, 100, 0.08);
+
+            border-radius: 22px;
+
+            padding:
+                clamp(22px, 5vw, 48px);
+
+            box-shadow:
+                0 12px 35px
+                rgba(31, 41, 55, 0.07),
+                0 2px 8px
+                rgba(31, 41, 55, 0.03);
+        }
+
+        .updated {
+            display: inline-block;
+
+            margin-bottom: 22px;
+
+            padding: 6px 13px;
+
+            background:
+                rgba(47, 129, 100, 0.08);
+
+            color: #287b60;
+
+            border-radius: 999px;
+
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .privacy-card h1 {
+            margin: 0 0 14px;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.4rem,
+                3vw,
+                1.85rem
+            );
+
+            line-height: 1.6;
+        }
+
+        .privacy-card h2 {
+            margin: 34px 0 10px;
+
+            padding-right: 12px;
+
+            border-right:
+                4px solid
+                #2f8164;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.08rem,
+                2.4vw,
+                1.3rem
+            );
+
+            line-height: 1.7;
+        }
+
+        .privacy-card p {
+            margin: 0 0 14px;
+
+            color: #374151;
+
+            font-size: clamp(
+                0.94rem,
+                1.8vw,
+                1.02rem
+            );
+        }
+
+        .privacy-card ul {
+            margin: 8px 0 18px;
+
+            padding-right: 28px;
+
+            color: #374151;
+        }
+
+        .privacy-card li {
+            margin-bottom: 6px;
+
+            font-size: clamp(
+                0.93rem,
+                1.7vw,
+                1rem
+            );
+        }
+
+        .email {
+            color: #2f8164;
+
+            font-weight: 600;
+
+            text-decoration: none;
+
+            word-break: break-word;
+        }
+
+        .email:hover {
+            color: #287b60;
+            text-decoration: underline;
+        }
+
+        .agreement {
+            margin-top: 30px !important;
+
+            padding-top: 22px;
+
+            border-top:
+                1px solid
+                rgba(31, 41, 55, 0.1);
+
+            color: #287b60 !important;
+
+            font-weight: 600;
+        }
+
+        .page-footer {
+            padding:
+                0
+                20px
+                30px;
+
+            text-align: center;
+
+            color: #4b5563;
+
+            font-size: 0.85rem;
+        }
+
+        .page-footer a {
+            color: #2f8164;
+
+            text-decoration: none;
+        }
+
+        .page-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+
+            .page-header {
+                padding:
+                    22px
+                    14px
+                    18px;
+            }
+
+            .content-wrapper {
+                padding:
+                    0
+                    10px
+                    28px;
+            }
+
+            .privacy-card {
+                border-radius: 17px;
+
+                padding:
+                    20px 17px;
+            }
+
+            .privacy-card h2 {
+                margin-top: 28px;
+
+                padding-right: 9px;
+            }
+
+            .privacy-card ul {
+                padding-right: 22px;
+            }
+        }
+
+        @media (max-width: 330px) {
+
+            .privacy-card {
+                padding:
+                    18px 14px;
+            }
+
+            .privacy-card p,
+            .privacy-card li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
+
 
 <body>
 
-<header class="site-header">
+    <header class="page-header">
 
-    <img src="assets/logo.png"
-         alt="صلِّ على المصطفى ﷺ کا لوگو"
-         class="logo">
+        <img
+            src="assets/logo.png"
+            alt="Salli Ala Almustafa ﷺ ایپلیکیشن کا لوگو"
+            class="logo"
+        >
 
-    <h1>صلِّ على المصطفى ﷺ</h1>
+        <h1 class="app-name">
+            Salli Ala Almustafa ﷺ
+        </h1>
 
-    <div class="subtitle">
-        رازداری کی پالیسی
-    </div>
-
-</header>
-
-
-<main class="policy-container">
-
-    <div class="language-selector">
-        <a href="ar.html">العربية</a>
-        <a href="en.html">English</a>
-        <a href="fr.html">Français</a>
-        <a href="es.html">Español</a>
-        <a href="id.html">Bahasa Indonesia</a>
-        <a href="ru.html">Русский</a>
-        <a href="tr.html">Türkçe</a>
-        <a href="ur.html" class="active">اردو</a>
-        <a href="zh.html">中文</a>
-        <a href="uk.html">Українська</a>
-        <a href="sw.html">Kiswahili</a>
-        <a href="bn.html">বাংলা</a>
-        <a href="so.html">Soomaali</a>
-        <a href="fil.html">Filipino</a>
-        <a href="ku.html">کوردی</a>
-    </div>
-
-
-    <article class="policy">
-
-        <h2>صلِّ على المصطفى ﷺ ایپ کی رازداری کی پالیسی</h2>
-
-        <p>
-            <strong>آخری تازہ کاری:</strong> 27 جولائی 2026
+        <p class="page-title">
+            رازداری کی پالیسی
         </p>
 
-        <p>
-            صلِّ على المصطفى ﷺ ایپ میں خوش آمدید۔
-            ہم صارفین کی رازداری کے تحفظ کا خیال رکھتے ہیں۔
-            یہ رازداری کی پالیسی وضاحت کرتی ہے کہ ایپ کے استعمال کے دوران
-            معلومات اور ڈیٹا کو کس طرح ہینڈل کیا جاتا ہے۔
+        <p class="page-subtitle">
+            Privacy Policy
         </p>
 
+    </header>
 
-        <h3>1. ایپ کے ذریعے جمع کی جانے والی معلومات</h3>
+
+    <main class="content-wrapper">
+
+        <article class="privacy-card">
+
+            <span class="updated">
+                آخری تازہ کاری: 10 اگست 2026
+            </span>
+
+            <h1>
+                Salli Ala Almustafa ﷺ ایپلیکیشن کی رازداری کی پالیسی
+            </h1>
+
+
+            <p>
+                Salli Ala Almustafa ﷺ ایپلیکیشن میں خوش آمدید۔
+                ہم اپنے صارفین کی رازداری کے تحفظ کے لیے پُرعزم ہیں۔
+                یہ رازداری کی پالیسی وضاحت کرتی ہے کہ ایپلیکیشن
+                کے استعمال کے دوران معلومات اور ڈیٹا کو کس طرح
+                سنبھالا جاتا ہے۔
+            </p>
+
+
+            <h2>
+                1۔ ایپلیکیشن کی جانب سے جمع کی جانے والی معلومات
+            </h2>
+
+            <p>
+                Salli Ala Almustafa ﷺ ایپلیکیشن ایسی کوئی ذاتی
+                معلومات جمع، طلب یا ذخیرہ نہیں کرتی جس سے صارف
+                کی شناخت کی جا سکے، بشمول:
+            </p>
+
+            <ul>
+                <li>نام۔</li>
+                <li>ای میل ایڈریس۔</li>
+                <li>فون نمبر۔</li>
+                <li>جغرافیائی محلِ وقوع کا ڈیٹا۔</li>
+                <li>رابطہ فہرست۔</li>
+                <li>ذاتی تصاویر۔</li>
+                <li>پیغامات۔</li>
+            </ul>
+
+            <p>
+                ایپلیکیشن کی بنیادی خصوصیات استعمال کرنے کے لیے
+                اکاؤنٹ بنانا یا لاگ اِن کرنا ضروری نہیں ہے۔
+            </p>
+
+
+            <h2>
+                2۔ ڈیوائس پر مقامی طور پر ذخیرہ کیا جانے والا ڈیٹا
+            </h2>
+
+            <p>
+                بہتر تجربۂ استعمال کے لیے ایپلیکیشن کچھ ترتیبات
+                صارف کے ڈیوائس پر مقامی طور پر محفوظ کرتی ہے، جیسے:
+            </p>
+
+            <ul>
+                <li>منتخب کردہ یاد دہانی کی آواز۔</li>
+                <li>یاد دہانی کی ترتیبات۔</li>
+                <li>صارف کی ترجیحات۔</li>
+                <li>
+                    کچھ میڈیا فائلیں جو ایپلیکیشن کے اندر
+                    استعمال کے لیے ڈاؤن لوڈ کی جاتی ہیں۔
+                </li>
+            </ul>
+
+            <p>
+                یہ معلومات ایپلیکیشن کے مخصوص نجی اسٹوریج میں
+                محفوظ ہوتی ہیں اور دیگر ایپلیکیشنز ان تک رسائی
+                حاصل نہیں کر سکتیں۔
+            </p>
+
+
+            <h2>
+                3۔ انٹرنیٹ سے رابطہ
+            </h2>
+
+            <p>
+                ایپلیکیشن انٹرنیٹ کنکشن کو صرف درج ذیل مقاصد کے
+                لیے استعمال کرتی ہے:
+            </p>
+
+            <ul>
+                <li>سرور کے ساتھ مواد کو ہم آہنگ کرنا۔</li>
+                <li>
+                    دستیاب اپ ڈیٹس کی صورت میں متن، تصاویر،
+                    آڈیو یا ویڈیو مواد کو ڈاؤن لوڈ یا اپ ڈیٹ کرنا۔
+                </li>
+                <li>
+                    ایپلیکیشن میں دکھائے جانے والے مواد کو بہتر بنانا۔
+                </li>
+            </ul>
+
+            <p>
+                انٹرنیٹ کنکشن صارفین کی ذاتی معلومات جمع کرنے
+                کے لیے استعمال نہیں کیا جاتا۔
+            </p>
+
+
+            <h2>
+                4۔ اطلاعات
+            </h2>
+
+            <p>
+                ایپلیکیشن مقامی اطلاعات کے ذریعے صارف کو نبی کریم ﷺ
+                پر درود و سلام بھیجنے کی یاد دہانی کراتی ہے، جو صارف
+                کی جانب سے منتخب کردہ ترتیبات کے مطابق ہوتی ہے۔
+            </p>
+
+            <p>
+                ایپلیکیشن کسی قسم کی تشہیری یا مارکیٹنگ اطلاعات
+                ارسال نہیں کرتی۔
+            </p>
+
+
+            <h2>
+                5۔ فائلیں اور آڈیو
+            </h2>
+
+            <p>
+                ایپلیکیشن بعض آڈیو فائلوں یا دیگر میڈیا کو ڈاؤن لوڈ
+                کرکے ایپلیکیشن کے مخصوص اسٹوریج میں محفوظ کر سکتی ہے
+                تاکہ انہیں مؤثر طریقے سے چلایا جا سکے۔ یہ فائلیں
+                کسی تیسرے فریق کے ساتھ شیئر نہیں کی جاتیں۔
+            </p>
+
+
+            <h2>
+                6۔ تیسرے فریق کی خدمات
+            </h2>
+
+            <p>
+                ایپلیکیشن اپنے آپریشن کے لیے ضروری بعض تکنیکی
+                خدمات استعمال کرتی ہے، جن میں شامل ہیں:
+            </p>
+
+            <ul>
+                <li>
+                    Supabase، مواد کو ذخیرہ کرنے اور ہم آہنگ کرنے کے لیے۔
+                </li>
+            </ul>
+
+            <p>
+                ان خدمات کو صارفین کا ڈیٹا فروخت کرنے یا اسے
+                اشتہاری مقاصد کے لیے شیئر کرنے کے لیے استعمال نہیں
+                کیا جاتا۔
+            </p>
+
+
+            <h2>
+                7۔ ڈیٹا کا تحفظ
+            </h2>
+
+            <p>
+                ہم ایپلیکیشن کے ذریعے استعمال ہونے والے ڈیٹا کے
+                تحفظ کے لیے مناسب اقدامات کرتے ہیں اور ذخیرہ کیے
+                جانے والے ڈیٹا کی مقدار کو صرف اتنی حد تک محدود
+                رکھنے کی کوشش کرتے ہیں جتنی ایپلیکیشن کے آپریشن
+                کے لیے ضروری ہو۔
+            </p>
+
+
+            <h2>
+                8۔ بچوں کی رازداری
+            </h2>
+
+            <p>
+                یہ ایپلیکیشن تمام عمر کے صارفین کے لیے موزوں ہے
+                اور جان بوجھ کر بچوں کی ذاتی معلومات جمع نہیں کرتی۔
+            </p>
+
+
+            <h2>
+                9۔ ڈیٹا کا اشتراک
+            </h2>
+
+            <p>
+                Salli Ala Almustafa ﷺ ایپلیکیشن صارفین کی ذاتی
+                معلومات کو کسی تیسرے فریق کو فروخت، کرائے پر یا
+                شیئر نہیں کرتی۔
+            </p>
+
+
+            <h2>
+                10۔ اس رازداری کی پالیسی میں تبدیلیاں
+            </h2>
+
+            <p>
+                نئی خصوصیات شامل ہونے یا نئی قانونی یا ضابطہ جاتی
+                ضروریات سامنے آنے کی صورت میں اس رازداری کی پالیسی
+                کو اپ ڈیٹ کیا جا سکتا ہے۔
+            </p>
+
+            <p>
+                کسی بھی اپ ڈیٹ کو اس صفحے پر نئی آخری ترمیم کی
+                تاریخ کے ساتھ شائع کیا جائے گا۔
+            </p>
+
+
+            <h2>
+                11۔ ہم سے رابطہ کریں
+            </h2>
+
+            <p>
+                اگر آپ کو اس رازداری کی پالیسی کے بارے میں کوئی
+                سوال یا تبصرہ ہو تو آپ ہم سے درج ذیل ذریعے سے
+                رابطہ کر سکتے ہیں:
+            </p>
+
+            <p>
+                <strong>ای میل:</strong>
+                <a
+                    class="email"
+                    href="mailto:contact@masadereducation.com"
+                >
+                    contact@masadereducation.com
+                </a>
+            </p>
+
+
+            <p class="agreement">
+                Salli Ala Almustafa ﷺ ایپلیکیشن استعمال کرنے سے
+                آپ اس رازداری کی پالیسی سے اتفاق کرتے ہیں۔
+            </p>
+
+        </article>
+
+    </main>
+
+
+    <footer class="page-footer">
 
         <p>
-            صلِّ على المصطفى ﷺ ایپ ایسی کوئی ذاتی معلومات جمع،
-            طلب یا محفوظ نہیں کرتی جن کے ذریعے صارف کی شناخت کی جا سکے،
-            جیسے:
+            Developed by Masader Al-Elm Educational
         </p>
 
-        <ul>
-            <li>نام۔</li>
-            <li>ای میل ایڈریس۔</li>
-            <li>فون نمبر۔</li>
-            <li>جغرافیائی مقام۔</li>
-            <li>رابطہ فہرست۔</li>
-            <li>ذاتی تصاویر۔</li>
-            <li>پیغامات۔</li>
-        </ul>
-
-        <p>
-            ایپ کی بنیادی خدمات استعمال کرنے کے لیے اکاؤنٹ بنانا
-            یا لاگ اِن کرنا ضروری نہیں ہے۔
-        </p>
-
-
-        <h3>2. مقامی طور پر محفوظ کیا جانے والا ڈیٹا</h3>
-
-        <p>
-            ایپ صارف کے تجربے کو بہتر بنانے کے لیے کچھ ترتیبات
-            صرف صارف کے آلے پر مقامی طور پر محفوظ کرتی ہے، جیسے:
-        </p>
-
-        <ul>
-            <li>یاد دہانی کے لیے منتخب کردہ آواز۔</li>
-            <li>یاد دہانی کی ترتیبات۔</li>
-            <li>صارف کی ترجیحات۔</li>
-            <li>
-                کچھ میڈیا فائلیں جو ایپ کے اندر استعمال کے لیے
-                ڈاؤن لوڈ کی جاتی ہیں۔
-            </li>
-        </ul>
-
-        <p>
-            یہ ڈیٹا ایپ کے نجی اسٹوریج میں محفوظ ہوتا ہے اور
-            دیگر ایپس اس تک رسائی حاصل نہیں کر سکتیں۔
-        </p>
-
-
-        <h3>3. انٹرنیٹ سے رابطہ</h3>
-
-        <p>
-            ایپ انٹرنیٹ کنکشن کو صرف درج ذیل مقاصد کے لیے استعمال کرتی ہے:
-        </p>
-
-        <ul>
-            <li>مواد کو سرور کے ساتھ ہم وقت ساز کرنا۔</li>
-
-            <li>
-                اپ ڈیٹس دستیاب ہونے پر متن، تصاویر، آڈیو یا ویڈیوز
-                ڈاؤن لوڈ یا اپ ڈیٹ کرنا۔
-            </li>
-
-            <li>
-                ایپ میں دکھائے جانے والے مواد کو بہتر بنانا۔
-            </li>
-        </ul>
-
-        <p>
-            انٹرنیٹ کنکشن صارف کی ذاتی معلومات جمع کرنے کے لیے
-            استعمال نہیں کیا جاتا۔
-        </p>
-
-
-        <h3>4. اطلاعات</h3>
-
-        <p>
-            ایپ مقامی اطلاعات کا استعمال کرتی ہے تاکہ صارف کو
-            اس کی اپنی منتخب کردہ ترتیبات کے مطابق نبی کریم ﷺ
-            پر درود بھیجنے کی یاد دہانی کرائی جا سکے۔
-        </p>
-
-        <p>
-            کوئی اشتہاری یا مارکیٹنگ اطلاعات نہیں بھیجی جاتی ہیں۔
-        </p>
-
-
-        <h3>5. فائلیں اور آڈیو</h3>
-
-        <p>
-            ایپ بعض آڈیو فائلیں یا دیگر میڈیا مواد ڈاؤن لوڈ کر کے
-            انہیں ایپ کے نجی اسٹوریج میں محفوظ کر سکتی ہے تاکہ
-            انہیں مؤثر طریقے سے چلایا جا سکے۔
-        </p>
-
-        <p>
-            یہ فائلیں کسی تیسرے فریق کے ساتھ شیئر نہیں کی جاتی ہیں۔
-        </p>
-
-
-        <h3>6. تیسرے فریق کی خدمات</h3>
-
-        <p>
-            ایپ اپنے کام کے لیے ضروری بعض تکنیکی خدمات استعمال کرتی ہے،
-            جن میں شامل ہے:
-        </p>
-
-        <ul>
-            <li>
-                <strong>Supabase</strong> — مواد کو محفوظ کرنے اور
-                ہم وقت ساز کرنے کے لیے۔
-            </li>
-        </ul>
-
-        <p>
-            ان خدمات کو صارف کے ڈیٹا کو فروخت کرنے یا اشتہاری مقاصد
-            کے لیے شیئر کرنے کے لیے استعمال نہیں کیا جاتا۔
-        </p>
-
-
-        <h3>7. ڈیٹا کا تحفظ</h3>
-
-        <p>
-            ہم ایپ کے ذریعے استعمال ہونے والے ڈیٹا کے تحفظ کے لیے
-            مناسب اقدامات کرتے ہیں اور ایپ کو چلانے کے لیے ضروری
-            ڈیٹا کی مقدار کو کم سے کم رکھنے کی کوشش کرتے ہیں۔
-        </p>
-
-
-        <h3>8. بچوں کی رازداری</h3>
-
-        <p>
-            یہ ایپ تمام عمر کے صارفین کے لیے موزوں ہے اور ہم جان بوجھ کر
-            بچوں سے کوئی ذاتی معلومات جمع نہیں کرتے۔
-        </p>
-
-
-        <h3>9. ڈیٹا کا اشتراک</h3>
-
-        <p>
-            صلِّ على المصطفى ﷺ صارفین کا ذاتی ڈیٹا فروخت،
-            کرائے پر یا کسی تیسرے فریق کے ساتھ شیئر نہیں کرتی۔
-        </p>
-
-
-        <h3>10. رازداری کی پالیسی میں تبدیلیاں</h3>
-
-        <p>
-            نئی خصوصیات شامل ہونے یا نئی قانونی یا ضابطہ جاتی ضروریات
-            سامنے آنے کی صورت میں اس رازداری کی پالیسی کو اپ ڈیٹ کیا جا سکتا ہے۔
-        </p>
-
-        <p>
-            ہر اپ ڈیٹ کو اس صفحے پر آخری تازہ کاری کی تاریخ کے ساتھ
-            شائع کیا جائے گا۔
-        </p>
-
-
-        <h3>11. ہم سے رابطہ کریں</h3>
-
-        <p>
-            اگر آپ کو اس رازداری کی پالیسی کے بارے میں کوئی سوال
-            یا رائے ہے تو آپ ہم سے رابطہ کر سکتے ہیں:
-        </p>
-
-        <p>
-            <strong>ای میل:</strong>
-            <a href="mailto:contact@masadereducation.com">
-                contact@masadereducation.com
-            </a>
-        </p>
-
-
-        <hr>
-
-        <p>
-            صلِّ على المصطفى ﷺ ایپ استعمال کرنے سے آپ اس رازداری کی
-            پالیسی سے اتفاق کرتے ہیں۔
-        </p>
-
-    </article>
-
-</main>
-
-
-<footer>
-
-    <p>
-        Masader Al-Elm Educational کی جانب سے تیار کردہ
-    </p>
-
-    <p>
         <a href="mailto:contact@masadereducation.com">
             contact@masadereducation.com
         </a>
-    </p>
 
-</footer>
+    </footer>
 
 </body>
 </html>
+```
