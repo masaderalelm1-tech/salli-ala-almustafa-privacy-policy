@@ -1,257 +1,590 @@
+```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Privacy Policy - Salli Ala Almustafa ﷺ</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <meta
+        name="description"
+        content="Privacy Policy for the Salli Ala Almustafa ﷺ application."
+    >
+
+    <meta
+        name="theme-color"
+        content="#2f8164"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logo.png"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f6f5;
+            color: #1f2937;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+
+            overflow-x: hidden;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 32px 20px 24px;
+        }
+
+        .logo {
+            display: block;
+
+            width: clamp(85px, 13vw, 130px);
+            height: clamp(85px, 13vw, 130px);
+
+            max-width: 100%;
+            max-height: 100%;
+
+            object-fit: contain;
+
+            margin: 0 auto 18px;
+        }
+
+        .app-name {
+            margin: 0;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.35rem,
+                3.5vw,
+                2rem
+            );
+
+            font-weight: 700;
+        }
+
+        .page-title {
+            margin: 6px 0 0;
+
+            color: #1f2937;
+
+            font-size: clamp(
+                1.15rem,
+                2.5vw,
+                1.45rem
+            );
+
+            font-weight: 600;
+        }
+
+        .page-subtitle {
+            margin: 2px 0 0;
+
+            color: #4b5563;
+
+            font-size: 0.95rem;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 0 18px 40px;
+        }
+
+        .privacy-card {
+            background: #ffffff;
+
+            border:
+                1px solid
+                rgba(47, 129, 100, 0.08);
+
+            border-radius: 22px;
+
+            padding:
+                clamp(22px, 5vw, 48px);
+
+            box-shadow:
+                0 12px 35px
+                rgba(31, 41, 55, 0.07),
+                0 2px 8px
+                rgba(31, 41, 55, 0.03);
+        }
+
+        .updated {
+            display: inline-block;
+
+            margin-bottom: 22px;
+
+            padding: 6px 13px;
+
+            background:
+                rgba(47, 129, 100, 0.08);
+
+            color: #287b60;
+
+            border-radius: 999px;
+
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .privacy-card h1 {
+            margin: 0 0 14px;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.4rem,
+                3vw,
+                1.85rem
+            );
+
+            line-height: 1.5;
+        }
+
+        .privacy-card h2 {
+            margin: 34px 0 10px;
+
+            padding-left: 12px;
+
+            border-left:
+                4px solid
+                #2f8164;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.08rem,
+                2.4vw,
+                1.3rem
+            );
+
+            line-height: 1.6;
+        }
+
+        .privacy-card p {
+            margin: 0 0 14px;
+
+            color: #374151;
+
+            font-size: clamp(
+                0.94rem,
+                1.8vw,
+                1.02rem
+            );
+        }
+
+        .privacy-card ul {
+            margin: 8px 0 18px;
+
+            padding-left: 28px;
+
+            color: #374151;
+        }
+
+        .privacy-card li {
+            margin-bottom: 6px;
+
+            font-size: clamp(
+                0.93rem,
+                1.7vw,
+                1rem
+            );
+        }
+
+        .email {
+            color: #2f8164;
+
+            font-weight: 600;
+
+            text-decoration: none;
+
+            word-break: break-word;
+        }
+
+        .email:hover {
+            color: #287b60;
+            text-decoration: underline;
+        }
+
+        .agreement {
+            margin-top: 30px !important;
+
+            padding-top: 22px;
+
+            border-top:
+                1px solid
+                rgba(31, 41, 55, 0.1);
+
+            color: #287b60 !important;
+
+            font-weight: 600;
+        }
+
+        .page-footer {
+            padding:
+                0
+                20px
+                30px;
+
+            text-align: center;
+
+            color: #4b5563;
+
+            font-size: 0.85rem;
+        }
+
+        .page-footer a {
+            color: #2f8164;
+
+            text-decoration: none;
+        }
+
+        .page-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+
+            .page-header {
+                padding:
+                    22px
+                    14px
+                    18px;
+            }
+
+            .content-wrapper {
+                padding:
+                    0
+                    10px
+                    28px;
+            }
+
+            .privacy-card {
+                border-radius: 17px;
+                padding: 20px 17px;
+            }
+
+            .privacy-card h2 {
+                margin-top: 28px;
+                padding-left: 9px;
+            }
+
+            .privacy-card ul {
+                padding-left: 22px;
+            }
+        }
+
+        @media (max-width: 330px) {
+
+            .privacy-card {
+                padding: 18px 14px;
+            }
+
+            .privacy-card p,
+            .privacy-card li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
+
 
 <body>
 
-<header class="site-header">
+    <header class="page-header">
 
-    <img src="assets/logo.png"
-         alt="Salli Ala Almustafa Logo"
-         class="logo">
+        <img
+            src="assets/logo.png"
+            alt="Salli Ala Almustafa ﷺ app logo"
+            class="logo"
+        >
 
-    <h1>Salli Ala Almustafa ﷺ</h1>
+        <h1 class="app-name">
+            Salli Ala Almustafa ﷺ
+        </h1>
 
-    <div class="page-title">
-        <span>Privacy Policy</span>
-        <span class="arabic-title">سياسة الخصوصية</span>
-    </div>
-
-</header>
-
-
-<main class="privacy-container">
-
-    <div class="language-bar">
-        <a href="index.html">🌐 Select Language</a>
-    </div>
-
-    <article class="privacy-content">
-
-        <p class="last-updated">
-            <strong>Last Updated:</strong> July 27, 2026
+        <p class="page-title">
+            Privacy Policy
         </p>
 
-
-        <h2>Privacy Policy for Salli Ala Almustafa ﷺ</h2>
-
-        <p>
-            Welcome to the Salli Ala Almustafa ﷺ application.
-            We are committed to protecting the privacy of our users.
-            This Privacy Policy explains how the application handles
-            information and data while you use the application.
+        <p class="page-subtitle">
+            سياسة الخصوصية
         </p>
 
-
-        <h2>1. Information We Collect</h2>
-
-        <p>
-            Salli Ala Almustafa ﷺ does not collect, request, or store
-            personal information that can be used to identify the user,
-            including:
-        </p>
-
-        <ul>
-            <li>Name.</li>
-            <li>Email address.</li>
-            <li>Phone number.</li>
-            <li>Geographical location.</li>
-            <li>Contacts.</li>
-            <li>Personal photos.</li>
-            <li>Messages.</li>
-        </ul>
-
-        <p>
-            The application does not require users to create an account
-            or sign in to use its core services.
-        </p>
+    </header>
 
 
-        <h2>2. Data Stored Locally</h2>
+    <main class="content-wrapper">
 
-        <p>
-            The application stores certain settings locally on the
-            user's device to improve the user experience, such as:
-        </p>
+        <article class="privacy-card">
 
-        <ul>
-            <li>The selected reminder sound.</li>
-            <li>Reminder settings.</li>
-            <li>User preferences.</li>
-            <li>
-                Some media files downloaded for use within the application.
-            </li>
-        </ul>
+            <span class="updated">
+                Last Updated: August 10, 2026
+            </span>
 
-        <p>
-            These data are stored within the application's private
-            storage area and are not accessible to other applications.
-        </p>
+            <h1>
+                Privacy Policy for Salli Ala Almustafa ﷺ
+            </h1>
 
-
-        <h2>3. Internet Connection</h2>
-
-        <p>
-            The application uses an Internet connection only for the
-            following purposes:
-        </p>
-
-        <ul>
-            <li>Synchronizing content with the server.</li>
-            <li>
-                Downloading or updating texts, images, audio files,
-                or videos when updates are available.
-            </li>
-            <li>
-                Improving the content displayed within the application.
-            </li>
-        </ul>
-
-        <p>
-            The Internet connection is not used to collect personal
-            information about the user.
-        </p>
-
-
-        <h2>4. Notifications</h2>
-
-        <p>
-            The application uses local notifications to remind users
-            to send prayers upon the Prophet Muhammad ﷺ according to
-            the settings selected by the user.
-        </p>
-
-        <p>
-            The application does not send advertising or marketing
-            notifications.
-        </p>
-
-
-        <h2>5. Files and Audio</h2>
-
-        <p>
-            The application may download certain audio files or other
-            media and store them within the application's private
-            storage area so that they can be played efficiently.
-        </p>
-
-        <p>
-            These files are not shared with any third party.
-        </p>
-
-
-        <h2>6. Third-Party Services</h2>
-
-        <p>
-            The application relies on certain technical services
-            necessary for its operation, such as:
-        </p>
-
-        <ul>
-            <li>
-                <strong>Supabase</strong> for storing and synchronizing
-                content.
-            </li>
-        </ul>
-
-        <p>
-            These services are not used to sell user data or share
-            user data for advertising purposes.
-        </p>
-
-
-        <h2>7. Data Protection</h2>
-
-        <p>
-            We take appropriate measures to protect the data used by
-            the application and work to minimize the amount of stored
-            data to the minimum necessary for operating the application.
-        </p>
-
-
-        <h2>8. Children's Privacy</h2>
-
-        <p>
-            The application is suitable for users of all age groups.
-            We do not knowingly collect personal information from
-            children.
-        </p>
-
-
-        <h2>9. Data Sharing</h2>
-
-        <p>
-            Salli Ala Almustafa ﷺ does not sell, rent, or share users'
-            personal information with any third party.
-        </p>
-
-
-        <h2>10. Changes to This Privacy Policy</h2>
-
-        <p>
-            This Privacy Policy may be updated when new features are
-            added or when new legal or regulatory requirements arise.
-        </p>
-
-        <p>
-            Any updates will be published on this page together with
-            an updated revision date.
-        </p>
-
-
-        <h2>11. Contact Us</h2>
-
-        <p>
-            If you have any questions or comments regarding this
-            Privacy Policy, you can contact us at:
-        </p>
-
-        <p class="contact-email">
-            <strong>Email:</strong>
-            <a href="mailto:contact@masadereducation.com">
-                contact@masadereducation.com
-            </a>
-        </p>
-
-
-        <div class="agreement-box">
 
             <p>
+                Welcome to the Salli Ala Almustafa ﷺ application.
+                We are committed to protecting the privacy of our
+                users. This Privacy Policy explains how the
+                application handles information and data while you
+                use the application.
+            </p>
+
+
+            <h2>
+                1. Information Collected by the Application
+            </h2>
+
+            <p>
+                Salli Ala Almustafa ﷺ does not collect, request,
+                or store any personal information that can be used
+                to identify you, including:
+            </p>
+
+            <ul>
+                <li>Name.</li>
+                <li>Email address.</li>
+                <li>Phone number.</li>
+                <li>Geolocation data.</li>
+                <li>Contacts.</li>
+                <li>Personal photos.</li>
+                <li>Messages.</li>
+            </ul>
+
+            <p>
+                The application does not require you to create an
+                account or sign in to use its core features.
+            </p>
+
+
+            <h2>
+                2. Data Stored Locally on Your Device
+            </h2>
+
+            <p>
+                The application stores certain settings locally
+                on your device to improve your experience, such as:
+            </p>
+
+            <ul>
+                <li>The selected reminder sound.</li>
+                <li>Reminder settings.</li>
+                <li>User preferences.</li>
+                <li>
+                    Certain media files downloaded for use
+                    within the application.
+                </li>
+            </ul>
+
+            <p>
+                This information is stored within the application's
+                private storage area and is not accessible to other
+                applications.
+            </p>
+
+
+            <h2>
+                3. Internet Connectivity
+            </h2>
+
+            <p>
+                The application uses an Internet connection only
+                for the following purposes:
+            </p>
+
+            <ul>
+                <li>Synchronizing content with the server.</li>
+                <li>
+                    Downloading or updating text, images, audio,
+                    or video content when updates are available.
+                </li>
+                <li>
+                    Improving the content displayed within
+                    the application.
+                </li>
+            </ul>
+
+            <p>
+                Internet connectivity is not used to collect
+                personal information about users.
+            </p>
+
+
+            <h2>
+                4. Notifications
+            </h2>
+
+            <p>
+                The application uses local notifications to remind
+                users to send blessings upon the Prophet ﷺ according
+                to the settings they choose.
+            </p>
+
+            <p>
+                The application does not send promotional or
+                marketing notifications.
+            </p>
+
+
+            <h2>
+                5. Files and Audio
+            </h2>
+
+            <p>
+                The application may download certain audio files
+                or other media and store them within the application's
+                private storage so that they can be played efficiently.
+                These files are not shared with any third party.
+            </p>
+
+
+            <h2>
+                6. Third-Party Services
+            </h2>
+
+            <p>
+                The application relies on certain technical services
+                required for its operation, including:
+            </p>
+
+            <ul>
+                <li>
+                    Supabase for storing and synchronizing content.
+                </li>
+            </ul>
+
+            <p>
+                These services are not used to sell user data or
+                share it for advertising purposes.
+            </p>
+
+
+            <h2>
+                7. Data Protection
+            </h2>
+
+            <p>
+                We take appropriate measures to protect the data
+                used by the application and work to minimize the
+                amount of stored data to only what is necessary
+                for the application to operate.
+            </p>
+
+
+            <h2>
+                8. Children's Privacy
+            </h2>
+
+            <p>
+                The application is suitable for users of all ages
+                and does not knowingly collect personal information
+                from children.
+            </p>
+
+
+            <h2>
+                9. Data Sharing
+            </h2>
+
+            <p>
+                Salli Ala Almustafa ﷺ does not sell, rent, or share
+                users' personal information with any third party.
+            </p>
+
+
+            <h2>
+                10. Changes to This Privacy Policy
+            </h2>
+
+            <p>
+                This Privacy Policy may be updated when new features
+                are added or when new legal or regulatory requirements
+                arise.
+            </p>
+
+            <p>
+                Any updates will be published on this page along
+                with an updated revision date.
+            </p>
+
+
+            <h2>
+                11. Contact Us
+            </h2>
+
+            <p>
+                If you have any questions or comments regarding
+                this Privacy Policy, you can contact us at:
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a
+                    class="email"
+                    href="mailto:contact@masadereducation.com"
+                >
+                    contact@masadereducation.com
+                </a>
+            </p>
+
+
+            <p class="agreement">
                 By using the Salli Ala Almustafa ﷺ application,
                 you agree to this Privacy Policy.
             </p>
 
-        </div>
+        </article>
 
-    </article>
-
-</main>
+    </main>
 
 
-<footer class="site-footer">
+    <footer class="page-footer">
 
-    <p>
-        Developed by Masader Al-Elm Educational
-    </p>
+        <p>
+            Developed by Masader Al-Elm Educational
+        </p>
 
-    <p>
         <a href="mailto:contact@masadereducation.com">
             contact@masadereducation.com
         </a>
-    </p>
 
-</footer>
-
-
-<script src="script.js"></script>
+    </footer>
 
 </body>
 </html>
+```
