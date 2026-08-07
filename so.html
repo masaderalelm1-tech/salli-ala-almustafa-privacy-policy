@@ -1,273 +1,591 @@
+```html id="m3kq8x"
 <!DOCTYPE html>
 <html lang="so" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Siyaasadda Asturnaanta - Salli Ala Almustafa ﷺ</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <title>Qaanuunka Asturnaanta - Salli Ala Almustafa ﷺ</title>
+
+    <meta
+        name="description"
+        content="Qaanuunka Asturnaanta ee barnaamijka Salli Ala Almustafa ﷺ."
+    >
+
+    <meta
+        name="theme-color"
+        content="#2f8164"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logo.png"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f6f5;
+            color: #1f2937;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+
+            overflow-x: hidden;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 32px 20px 24px;
+        }
+
+        .logo {
+            display: block;
+
+            width: clamp(85px, 13vw, 130px);
+            height: clamp(85px, 13vw, 130px);
+
+            max-width: 100%;
+            max-height: 100%;
+
+            object-fit: contain;
+
+            margin: 0 auto 18px;
+        }
+
+        .app-name {
+            margin: 0;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.35rem,
+                3.5vw,
+                2rem
+            );
+
+            font-weight: 700;
+        }
+
+        .page-title {
+            margin: 6px 0 0;
+
+            color: #1f2937;
+
+            font-size: clamp(
+                1.15rem,
+                2.5vw,
+                1.45rem
+            );
+
+            font-weight: 600;
+        }
+
+        .page-subtitle {
+            margin: 2px 0 0;
+
+            color: #4b5563;
+
+            font-size: 0.95rem;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 0 18px 40px;
+        }
+
+        .privacy-card {
+            background: #ffffff;
+
+            border:
+                1px solid
+                rgba(47, 129, 100, 0.08);
+
+            border-radius: 22px;
+
+            padding:
+                clamp(22px, 5vw, 48px);
+
+            box-shadow:
+                0 12px 35px
+                rgba(31, 41, 55, 0.07),
+                0 2px 8px
+                rgba(31, 41, 55, 0.03);
+        }
+
+        .updated {
+            display: inline-block;
+
+            margin-bottom: 22px;
+
+            padding: 6px 13px;
+
+            background:
+                rgba(47, 129, 100, 0.08);
+
+            color: #287b60;
+
+            border-radius: 999px;
+
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .privacy-card h1 {
+            margin: 0 0 14px;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.4rem,
+                3vw,
+                1.85rem
+            );
+
+            line-height: 1.5;
+        }
+
+        .privacy-card h2 {
+            margin: 34px 0 10px;
+
+            padding-left: 12px;
+
+            border-left:
+                4px solid
+                #2f8164;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.08rem,
+                2.4vw,
+                1.3rem
+            );
+
+            line-height: 1.6;
+        }
+
+        .privacy-card p {
+            margin: 0 0 14px;
+
+            color: #374151;
+
+            font-size: clamp(
+                0.94rem,
+                1.8vw,
+                1.02rem
+            );
+        }
+
+        .privacy-card ul {
+            margin: 8px 0 18px;
+            padding-left: 28px;
+            color: #374151;
+        }
+
+        .privacy-card li {
+            margin-bottom: 6px;
+
+            font-size: clamp(
+                0.93rem,
+                1.7vw,
+                1rem
+            );
+        }
+
+        .email {
+            color: #2f8164;
+
+            font-weight: 600;
+
+            text-decoration: none;
+
+            word-break: break-word;
+        }
+
+        .email:hover {
+            color: #287b60;
+            text-decoration: underline;
+        }
+
+        .agreement {
+            margin-top: 30px !important;
+
+            padding-top: 22px;
+
+            border-top:
+                1px solid
+                rgba(31, 41, 55, 0.1);
+
+            color: #287b60 !important;
+
+            font-weight: 600;
+        }
+
+        .page-footer {
+            padding:
+                0
+                20px
+                30px;
+
+            text-align: center;
+
+            color: #4b5563;
+
+            font-size: 0.85rem;
+        }
+
+        .page-footer a {
+            color: #2f8164;
+            text-decoration: none;
+        }
+
+        .page-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+
+            .page-header {
+                padding:
+                    22px
+                    14px
+                    18px;
+            }
+
+            .content-wrapper {
+                padding:
+                    0
+                    10px
+                    28px;
+            }
+
+            .privacy-card {
+                border-radius: 17px;
+                padding: 20px 17px;
+            }
+
+            .privacy-card h2 {
+                margin-top: 28px;
+                padding-left: 9px;
+            }
+
+            .privacy-card ul {
+                padding-left: 22px;
+            }
+        }
+
+        @media (max-width: 330px) {
+
+            .privacy-card {
+                padding: 18px 14px;
+            }
+
+            .privacy-card p,
+            .privacy-card li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
+
 
 <body>
 
-<header class="site-header">
+    <header class="page-header">
 
-    <img src="assets/logo.png"
-         alt="Astaanta Salli Ala Almustafa ﷺ"
-         class="logo">
+        <img
+            src="assets/logo.png"
+            alt="Astaanta barnaamijka Salli Ala Almustafa ﷺ"
+            class="logo"
+        >
 
-    <h1>Salli Ala Almustafa ﷺ</h1>
+        <h1 class="app-name">
+            Salli Ala Almustafa ﷺ
+        </h1>
 
-    <div class="subtitle">
-        Siyaasadda Asturnaanta
-    </div>
-
-</header>
-
-
-<main class="policy-container">
-
-    <div class="language-selector">
-        <a href="ar.html">العربية</a>
-        <a href="en.html">English</a>
-        <a href="fr.html">Français</a>
-        <a href="es.html">Español</a>
-        <a href="id.html">Bahasa Indonesia</a>
-        <a href="ru.html">Русский</a>
-        <a href="tr.html">Türkçe</a>
-        <a href="ur.html">اردو</a>
-        <a href="zh.html">中文</a>
-        <a href="uk.html">Українська</a>
-        <a href="sw.html">Kiswahili</a>
-        <a href="bn.html">বাংলা</a>
-        <a href="so.html" class="active">Soomaali</a>
-        <a href="fil.html">Filipino</a>
-        <a href="ku.html">کوردی</a>
-    </div>
-
-
-    <article class="policy">
-
-        <h2>Siyaasadda Asturnaanta ee App-ka Salli Ala Almustafa ﷺ</h2>
-
-        <p>
-            <strong>La cusboonaysiiyay:</strong> 27 Luulyo 2026
+        <p class="page-title">
+            Qaanuunka Asturnaanta
         </p>
 
-        <p>
-            Ku soo dhawoow app-ka Salli Ala Almustafa ﷺ.
-            Waxaan muhiimad weyn siinaynaa ilaalinta asturnaanta
-            isticmaalayaashayada. Siyaasaddan asturnaanta waxay
-            sharxaysaa sida macluumaadka iyo xogta loo maareeyo
-            marka aad isticmaalayso app-ka.
+        <p class="page-subtitle">
+            Privacy Policy
         </p>
 
+    </header>
 
-        <h3>1. Macluumaadka uu App-ku ururiyo</h3>
+
+    <main class="content-wrapper">
+
+        <article class="privacy-card">
+
+            <span class="updated">
+                Markii ugu dambeysay la cusboonaysiiyay:
+                10 Agoosto 2026
+            </span>
+
+            <h1>
+                Qaanuunka Asturnaanta ee Barnaamijka
+                Salli Ala Almustafa ﷺ
+            </h1>
+
+
+            <p>
+                Ku soo dhawoow barnaamijka Salli Ala Almustafa ﷺ.
+                Waxaan si weyn uga go'an tahay ilaalinta asturnaanta
+                isticmaalayaashayada. Qaanuunkan Asturnaantu wuxuu
+                sharxayaa sida barnaamijku u maareeyo macluumaadka
+                iyo xogta inta lagu jiro isticmaalka.
+            </p>
+
+
+            <h2>
+                1. Macluumaadka uu Barnaamijku Ururiyo
+            </h2>
+
+            <p>
+                Barnaamijka Salli Ala Almustafa ﷺ ma ururiyo,
+                ma codsado, mana kaydiyo xog shakhsiyeed oo lagu
+                aqoonsan karo isticmaalaha, sida:
+            </p>
+
+            <ul>
+                <li>Magaca.</li>
+                <li>Cinwaanka iimaylka.</li>
+                <li>Lambarka telefoonka.</li>
+                <li>Goobta juqraafiyeed.</li>
+                <li>Xogta xiriirada.</li>
+                <li>Sawirrada gaarka ah.</li>
+                <li>Farriimaha.</li>
+            </ul>
+
+            <p>
+                Looma baahna in la sameeyo akoon ama la galo
+                si loo isticmaalo adeegyada aasaasiga ah ee barnaamijka.
+            </p>
+
+
+            <h2>
+                2. Xogta Lagu Kaydiyo Qalabka Gudihiisa
+            </h2>
+
+            <p>
+                Si loo hagaajiyo khibradda isticmaalaha, barnaamijku
+                wuxuu ku kaydin karaa qalabka isticmaalaha qaar ka mid
+                ah dejimaha, sida:
+            </p>
+
+            <ul>
+                <li>Codka loo doortay xusuusinta.</li>
+                <li>Dejinta xusuusinta.</li>
+                <li>Doorbidyada isticmaalaha.</li>
+                <li>
+                    Qaar ka mid ah faylasha warbaahinta ee loo soo
+                    dejiyo in lagu isticmaalo barnaamijka.
+                </li>
+            </ul>
+
+            <p>
+                Xogtan waxaa lagu kaydiyaa kaydka gaarka ah ee
+                barnaamijka, mana heli karaan barnaamijyada kale.
+            </p>
+
+
+            <h2>
+                3. Xiriirka Internetka
+            </h2>
+
+            <p>
+                Barnaamijku wuxuu isticmaalaa xiriirka Internetka
+                oo keliya ujeeddooyinkan:
+            </p>
+
+            <ul>
+                <li>Isku-waafajinta nuxurka iyo server-ka.</li>
+                <li>
+                    Soo dejinta ama cusboonaysiinta qoraallada,
+                    sawirrada, codadka ama muuqaalada marka
+                    cusboonaysiin la heli karo.
+                </li>
+                <li>
+                    Hagaajinta nuxurka lagu soo bandhigo barnaamijka.
+                </li>
+            </ul>
+
+            <p>
+                Xiriirka Internetka looma isticmaalo in lagu ururiyo
+                xogta gaarka ah ee isticmaalaha.
+            </p>
+
+
+            <h2>
+                4. Ogeysiisyada
+            </h2>
+
+            <p>
+                Barnaamijku wuxuu isticmaalaa ogeysiisyo gudaha ah
+                si uu isticmaalaha ugu xusuusiyo inuu ku salliyo
+                Nabiga Muxammad ﷺ, iyadoo la raacayo dejimaha
+                uu isticmaaluhu isagu doortay.
+            </p>
+
+            <p>
+                Barnaamijku ma diro ogeysiisyo xayeysiis ama suuq-geyn ah.
+            </p>
+
+
+            <h2>
+                5. Faylasha iyo Codka
+            </h2>
+
+            <p>
+                Barnaamijku wuxuu soo dejisan karaa faylal cod ah
+                ama waxyaabo kale oo warbaahin ah, wuxuuna ku kaydin
+                karaa kaydka gaarka ah ee barnaamijka si loogu
+                ciyaaro si hufan. Faylashan lama wadaago cid saddexaad.
+            </p>
+
+
+            <h2>
+                6. Adeegyada Dhinacyada Saddexaad
+            </h2>
+
+            <p>
+                Barnaamijku wuxuu isticmaalaa adeegyo farsamo oo
+                muhiim u ah shaqadiisa, oo ay ka mid yihiin:
+            </p>
+
+            <ul>
+                <li>
+                    Supabase si loogu kaydiyo loona waafajiyo nuxurka.
+                </li>
+            </ul>
+
+            <p>
+                Adeegyadan looma isticmaalo iibinta xogta isticmaalaha
+                ama la wadaagista xogta ujeeddooyin xayeysiis.
+            </p>
+
+
+            <h2>
+                7. Ilaalinta Xogta
+            </h2>
+
+            <p>
+                Waxaan qaadnaa tallaabooyin ku habboon si loo ilaaliyo
+                xogta uu isticmaalo barnaamijku, waxaana isku daynaa
+                inaan yareyno xogta la kaydiyo ilaa heerka ugu yar
+                ee lagama maarmaanka u ah shaqada barnaamijka.
+            </p>
+
+
+            <h2>
+                8. Asturnaanta Carruurta
+            </h2>
+
+            <p>
+                Barnaamijku wuxuu ku habboon yahay dadka da' kasta leh,
+                mana ururiyo si ula kac ah xog shakhsiyeed oo carruurta ah.
+            </p>
+
+
+            <h2>
+                9. Wadaagista Xogta
+            </h2>
+
+            <p>
+                Barnaamijka Salli Ala Almustafa ﷺ ma iibiyo,
+                ma kiraysto, mana la wadaago xogta shakhsiyeed
+                ee isticmaalayaasha cid saddexaad.
+            </p>
+
+
+            <h2>
+                10. Isbeddellada Qaanuunka Asturnaanta
+            </h2>
+
+            <p>
+                Qaanuunkan Asturnaanta waxaa la cusboonaysiin karaa
+                marka lagu daro astaamo cusub ama marka ay soo baxaan
+                shuruudo sharci ama nidaam oo cusub.
+            </p>
+
+            <p>
+                Cusboonaysiin kasta waxaa lagu daabici doonaa
+                boggan iyadoo sidoo kale la cusboonaysiinayo
+                taariikhda wax-ka-beddelkii ugu dambeeyay.
+            </p>
+
+
+            <h2>
+                11. Nala Soo Xiriir
+            </h2>
+
+            <p>
+                Haddii aad qabto su'aalo ama faallooyin ku saabsan
+                Qaanuunkan Asturnaanta, waxaad nagala soo xiriiri kartaa:
+            </p>
+
+            <p>
+                <strong>Iimayl:</strong>
+
+                <a
+                    class="email"
+                    href="mailto:contact@masadereducation.com"
+                >
+                    contact@masadereducation.com
+                </a>
+            </p>
+
+
+            <p class="agreement">
+                Markaad isticmaasho barnaamijka Salli Ala Almustafa ﷺ,
+                waxaad oggolaanaysaa Qaanuunkan Asturnaanta.
+            </p>
+
+        </article>
+
+    </main>
+
+
+    <footer class="page-footer">
 
         <p>
-            App-ka Salli Ala Almustafa ﷺ ma ururiyo, ma codsado,
-            mana kaydiyo wax xog shakhsi ah oo lagu aqoonsan karo
-            isticmaalaha, sida:
+            Developed by Masader Al-Elm Educational
         </p>
 
-        <ul>
-            <li>Magaca.</li>
-            <li>Cinwaanka iimaylka.</li>
-            <li>Lambarka telefoonka.</li>
-            <li>Goobta juqraafiyeed.</li>
-            <li>Xiriirrada telefoonka.</li>
-            <li>Sawirrada gaarka ah.</li>
-            <li>Farriimaha.</li>
-        </ul>
-
-        <p>
-            App-ku uma baahna in isticmaaluhu sameysto akoon
-            ama uu galo adeeg si uu u isticmaalo adeegyada aasaasiga ah.
-        </p>
-
-
-        <h3>2. Xogta lagu kaydiyo gudaha qalabka</h3>
-
-        <p>
-            App-ku wuxuu ku kaydin karaa qaar ka mid ah dejimaha
-            qalabka isticmaalaha oo keliya, si loo hagaajiyo
-            khibradda isticmaalka, sida:
-        </p>
-
-        <ul>
-            <li>Codka loo doortay xusuusinta.</li>
-            <li>Dejimaha xusuusinta.</li>
-            <li>Doorashooyinka isticmaalaha.</li>
-            <li>
-                Qaar ka mid ah faylasha warbaahinta ee la soo dejiyo
-                si loogu isticmaalo gudaha app-ka.
-            </li>
-        </ul>
-
-        <p>
-            Xogtan waxaa lagu kaydiyaa kaydka gaarka ah ee app-ka,
-            mana heli karaan apps kale.
-        </p>
-
-
-        <h3>3. Xiriirka Internet-ka</h3>
-
-        <p>
-            App-ku wuxuu isticmaalaa internet-ka oo keliya
-            ujeeddooyinkan:
-        </p>
-
-        <ul>
-            <li>In lagu waafajiyo macluumaadka server-ka.</li>
-
-            <li>
-                In la soo dejiyo ama la cusboonaysiiyo qoraallo,
-                sawirro, codad ama muuqaallo marka ay jiraan
-                cusboonaysiinno.
-            </li>
-
-            <li>
-                In la hagaajiyo macluumaadka lagu soo bandhigo app-ka.
-            </li>
-        </ul>
-
-        <p>
-            Internet-ka looma isticmaalo in lagu ururiyo
-            xog shakhsi ah oo ku saabsan isticmaalaha.
-        </p>
-
-
-        <h3>4. Ogeysiisyada</h3>
-
-        <p>
-            App-ku wuxuu isticmaalaa ogeysiisyo gudaha qalabka ah
-            si uu isticmaalaha ugu xusuusiyo saliga Nabiga ﷺ,
-            iyadoo lagu salaynayo dejimaha uu isticmaaluhu doortay.
-        </p>
-
-        <p>
-            Lama diro ogeysiisyo xayeysiis ama suuq-geyn ah.
-        </p>
-
-
-        <h3>5. Faylasha iyo codadka</h3>
-
-        <p>
-            App-ku wuxuu soo dejisan karaa qaar ka mid ah faylasha
-            codka ama warbaahinta wuxuuna ku kaydin karaa kaydka
-            gaarka ah ee app-ka si loogu ciyaaro si hufan.
-        </p>
-
-        <p>
-            Faylashan lama wadaago cid saddexaad.
-        </p>
-
-
-        <h3>6. Adeegyada dhinacyada saddexaad</h3>
-
-        <p>
-            App-ku wuxuu isticmaalaa qaar ka mid ah adeegyada
-            farsamo ee lagama maarmaanka u ah shaqadiisa, sida:
-        </p>
-
-        <ul>
-            <li>
-                <strong>Supabase</strong> — loogu talagalay
-                kaydinta iyo isku-waafajinta macluumaadka.
-            </li>
-        </ul>
-
-        <p>
-            Adeegyadan looma isticmaalo in lagu iibiyo xogta
-            isticmaalaha ama loogu wadaago ujeeddooyin xayeysiis.
-        </p>
-
-
-        <h3>7. Ilaalinta xogta</h3>
-
-        <p>
-            Waxaan qaadnaa tallaabooyin ku habboon oo lagu ilaalinayo
-            xogta uu app-ku isticmaalo, waxaana isku daynaa inaan
-            yareyno xogta la kaydiyo ilaa heerka ugu yar ee lagama
-            maarmaanka u ah shaqada app-ka.
-        </p>
-
-
-        <h3>8. Asturnaanta carruurta</h3>
-
-        <p>
-            App-ku wuxuu ku habboon yahay dhammaan da'aha.
-            Si ula kac ah ugama ururinno carruurta wax xog shakhsi ah.
-        </p>
-
-
-        <h3>9. Wadaagista xogta</h3>
-
-        <p>
-            Salli Ala Almustafa ﷺ ma iibiyo, ma kiraysto,
-            mana la wadaago xogta shakhsiyeed ee isticmaalaha
-            cid saddexaad.
-        </p>
-
-
-        <h3>10. Isbeddellada Siyaasadda Asturnaanta</h3>
-
-        <p>
-            Siyaasaddan asturnaanta waa la cusboonaysiin karaa
-            marka lagu daro astaamo cusub ama marka ay soo baxaan
-            shuruudo sharci ama nidaam oo cusub.
-        </p>
-
-        <p>
-            Wixii cusboonaysiin ah waxaa lagu daabici doonaa
-            boggan iyadoo sidoo kale la cusboonaysiinayo taariikhda
-            ugu dambaysay ee wax ka beddelka.
-        </p>
-
-
-        <h3>11. Nala soo xiriir</h3>
-
-        <p>
-            Haddii aad qabto su'aalo ama faallooyin ku saabsan
-            siyaasaddan asturnaanta, waxaad nagala soo xiriiri kartaa:
-        </p>
-
-        <p>
-            <strong>Iimayl:</strong>
-            <a href="mailto:contact@masadereducation.com">
-                contact@masadereducation.com
-            </a>
-        </p>
-
-
-        <hr>
-
-        <p>
-            Markaad isticmaasho app-ka Salli Ala Almustafa ﷺ,
-            waxaad oggolaanaysaa siyaasaddan asturnaanta.
-        </p>
-
-    </article>
-
-</main>
-
-
-<footer>
-
-    <p>
-        Waxaa sameeyay Masader Al-Elm Educational
-    </p>
-
-    <p>
         <a href="mailto:contact@masadereducation.com">
             contact@masadereducation.com
         </a>
-    </p>
 
-</footer>
+    </footer>
 
 </body>
 </html>
+```
