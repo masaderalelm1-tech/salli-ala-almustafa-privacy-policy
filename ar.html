@@ -3,115 +3,461 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <title>سياسة الخصوصية - صلِّ على المصطفى ﷺ</title>
 
-    <meta
-        name="description"
-        content="سياسة الخصوصية لتطبيق صلِّ على المصطفى ﷺ"
-    >
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    <meta
-        name="robots"
-        content="index, follow"
-    >
+        html {
+            scroll-behavior: smooth;
+        }
 
-    <title>سياسة الخصوصية - صلِّ على المصطفى ﷺ</title>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family:
+                Arial,
+                "Segoe UI",
+                Tahoma,
+                sans-serif;
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="assets/favicon.png"
-    >
+            background: #f4f6f5;
+            color: #1f2937;
+            line-height: 1.9;
+        }
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+        /* =========================
+           Page
+        ========================= */
+
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            padding: 30px 20px 50px;
+        }
+
+        /* =========================
+           Logo
+        ========================= */
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+
+            max-width: 120px;
+            max-height: 120px;
+
+            object-fit: contain;
+            display: inline-block;
+        }
+
+        /* =========================
+           App Header
+        ========================= */
+
+        .app-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .app-title h1 {
+            margin: 0;
+
+            font-size: 32px;
+            font-weight: 700;
+
+            color: #287b60;
+        }
+
+        .privacy-title {
+            margin-top: 8px;
+
+            font-size: 22px;
+            font-weight: 500;
+
+            color: #4b5563;
+            direction: ltr;
+        }
+
+        .privacy-arabic {
+            margin-top: 2px;
+
+            font-size: 17px;
+            color: #6b7280;
+        }
+
+        /* =========================
+           Main Content
+        ========================= */
+
+        .content-card {
+            width: min(1100px, 95%);
+            margin: 0 auto;
+
+            background: #ffffff;
+
+            border-radius: 22px;
+
+            padding: 45px 50px;
+
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* =========================
+           Back / Language Button
+        ========================= */
+
+        .language-link-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .language-link {
+            display: inline-block;
+
+            padding: 10px 22px;
+
+            background: #2f8164;
+            color: #ffffff;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            font-size: 16px;
+            font-weight: 500;
+
+            transition:
+                background-color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .language-link:hover {
+            background: #256b53;
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 5px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        /* =========================
+           Privacy Policy
+        ========================= */
+
+        .policy-title {
+            margin-top: 0;
+            margin-bottom: 8px;
+
+            font-size: 30px;
+            font-weight: 700;
+
+            color: #1f2937;
+        }
+
+        .update-date {
+            margin-top: 0;
+            margin-bottom: 30px;
+
+            color: #6b7280;
+
+            font-size: 15px;
+        }
+
+        .policy-section {
+            margin-bottom: 28px;
+        }
+
+        .policy-section h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+
+            font-size: 22px;
+
+            color: #287b60;
+        }
+
+        .policy-section p {
+            margin: 8px 0;
+
+            font-size: 17px;
+            color: #374151;
+        }
+
+        .policy-section ul {
+            margin-top: 8px;
+            margin-bottom: 10px;
+
+            padding-right: 25px;
+        }
+
+        .policy-section li {
+            margin: 5px 0;
+
+            font-size: 17px;
+            color: #374151;
+        }
+
+        .email {
+            color: #2f8164;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        .agreement {
+            margin-top: 35px;
+            padding: 20px;
+
+            background: #f4f8f6;
+
+            border-right: 4px solid #2f8164;
+
+            border-radius: 8px;
+
+            font-size: 17px;
+            color: #374151;
+        }
+
+        /* =========================
+           Footer
+        ========================= */
+
+        footer {
+            width: min(1100px, 95%);
+            margin: 30px auto 0;
+
+            text-align: center;
+
+            color: #4b5563;
+        }
+
+        footer p {
+            margin: 6px 0;
+
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #2f8164;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           Tablet
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .content-card {
+                padding: 40px 30px;
+            }
+
+            .logo {
+                width: 110px;
+                height: 110px;
+                max-width: 110px;
+                max-height: 110px;
+            }
+
+            .app-title h1 {
+                font-size: 29px;
+            }
+
+            .policy-title {
+                font-size: 27px;
+            }
+        }
+
+        /* =========================
+           Mobile
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            .page {
+                padding: 20px 12px 35px;
+            }
+
+            .logo-container {
+                margin-bottom: 12px;
+            }
+
+            .logo {
+                width: 90px;
+                height: 90px;
+
+                max-width: 90px;
+                max-height: 90px;
+            }
+
+            .app-title {
+                margin-bottom: 25px;
+            }
+
+            .app-title h1 {
+                font-size: 25px;
+            }
+
+            .privacy-title {
+                font-size: 19px;
+            }
+
+            .privacy-arabic {
+                font-size: 16px;
+            }
+
+            .content-card {
+                width: 100%;
+
+                padding: 28px 20px;
+
+                border-radius: 18px;
+            }
+
+            .language-link {
+                font-size: 15px;
+
+                padding: 9px 18px;
+            }
+
+            .policy-title {
+                font-size: 24px;
+            }
+
+            .policy-section h2 {
+                font-size: 20px;
+            }
+
+            .policy-section p,
+            .policy-section li,
+            .agreement {
+                font-size: 16px;
+            }
+
+            footer {
+                width: 100%;
+            }
+        }
+
+        /* =========================
+           Very Small Screens
+        ========================= */
+
+        @media (max-width: 380px) {
+
+            .logo {
+                width: 80px;
+                height: 80px;
+
+                max-width: 80px;
+                max-height: 80px;
+            }
+
+            .app-title h1 {
+                font-size: 22px;
+            }
+
+            .content-card {
+                padding: 24px 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="page">
 
-    <!-- =====================================================
-         Header
-         ===================================================== -->
+    <!-- =========================
+         Logo
+    ========================= -->
 
-    <header class="header">
-
+    <div class="logo-container">
         <img
             src="assets/logo.png"
-            alt="شعار تطبيق صلِّ على المصطفى ﷺ"
+            alt="شعار تطبيق صلِّ على المصطفى ﷺ"
             class="logo"
         >
+    </div>
 
-        <h1 class="app-title">
-            صلِّ على المصطفى ﷺ
+
+    <!-- =========================
+         App Title
+    ========================= -->
+
+    <div class="app-title">
+
+        <h1>
+            صلِّ على المصطفى ﷺ
         </h1>
 
-        <p class="subtitle">
+        <div class="privacy-title">
             Privacy Policy
-        </p>
+        </div>
 
-        <p class="subtitle-ar">
+        <div class="privacy-arabic">
             سياسة الخصوصية
-        </p>
+        </div>
 
-    </header>
-
-
-    <!-- =====================================================
-         Navigation
-         ===================================================== -->
-
-    <nav
-        class="language-navigation"
-        aria-label="التنقل"
-    >
-
-        <a
-            href="index.html"
-            class="back-button"
-            data-home-link
-        >
-            ← اختيار اللغة
-        </a>
-
-    </nav>
+    </div>
 
 
-    <!-- =====================================================
-         Privacy Policy
-         ===================================================== -->
+    <!-- =========================
+         Privacy Policy Card
+    ========================= -->
 
-    <main class="policy-container">
+    <main class="content-card">
 
-        <div class="policy-header">
+        <!-- Language Button -->
 
-            <h2 class="policy-title">
-                سياسة الخصوصية
-            </h2>
+        <div class="language-link-container">
 
-            <p class="last-updated">
-                آخر تحديث: 27 يوليو 2026
-            </p>
+            <a
+                href="index.html"
+                class="language-link"
+            >
+                ← اختيار اللغة
+            </a>
 
         </div>
 
 
-        <!-- =================================================
-             Introduction
-             ================================================= -->
+        <!-- Policy Title -->
+
+        <h2 class="policy-title">
+            سياسة الخصوصية
+        </h2>
+
+        <p class="update-date">
+            آخر تحديث: 27 يوليو 2026
+        </p>
+
+
+        <!-- Introduction -->
 
         <section class="policy-section">
 
             <p>
-                نرحب بكم في تطبيق
-                <strong>صلِّ على المصطفى ﷺ</strong>.
+                نرحب بكم في تطبيق صلِّ على المصطفى ﷺ.
                 نحن نحرص على حماية خصوصية المستخدمين،
                 وتوضح هذه السياسة كيفية تعامل التطبيق
                 مع المعلومات والبيانات أثناء استخدامه.
@@ -120,9 +466,7 @@
         </section>
 
 
-        <!-- =================================================
-             Section 1
-             ================================================= -->
+        <!-- Section 1 -->
 
         <section class="policy-section">
 
@@ -131,7 +475,7 @@
             </h2>
 
             <p>
-                لا يقوم تطبيق صلِّ على المصطفى ﷺ بجمع أو طلب
+                لا يقوم تطبيق صلِّ على المصطفى ﷺ بجمع أو طلب
                 أو تخزين أي بيانات شخصية يمكن من خلالها
                 التعرف على هوية المستخدم، مثل:
             </p>
@@ -162,9 +506,7 @@
         </section>
 
 
-        <!-- =================================================
-             Section 2
-             ================================================= -->
+        <!-- Section 2 -->
 
         <section class="policy-section">
 
@@ -174,23 +516,16 @@
 
             <p>
                 يقوم التطبيق بحفظ بعض الإعدادات على جهاز
-                المستخدم فقط، بهدف تحسين تجربة الاستخدام،
-                مثل:
+                المستخدم فقط، بهدف تحسين تجربة الاستخدام، مثل:
             </p>
 
             <ul>
 
-                <li>
-                    الصوت المختار للتذكير.
-                </li>
+                <li>الصوت المختار للتذكير.</li>
 
-                <li>
-                    إعدادات التذكير.
-                </li>
+                <li>إعدادات التذكير.</li>
 
-                <li>
-                    تفضيلات المستخدم.
-                </li>
+                <li>تفضيلات المستخدم.</li>
 
                 <li>
                     بعض ملفات الوسائط التي يتم تنزيلها
@@ -201,16 +536,13 @@
 
             <p>
                 يتم تخزين هذه البيانات داخل مساحة التخزين
-                الخاصة بالتطبيق ولا يمكن للتطبيقات الأخرى
-                الوصول إليها.
+                الخاصة بالتطبيق ولا يمكن للتطبيقات الأخرى الوصول إليها.
             </p>
 
         </section>
 
 
-        <!-- =================================================
-             Section 3
-             ================================================= -->
+        <!-- Section 3 -->
 
         <section class="policy-section">
 
@@ -219,8 +551,7 @@
             </h2>
 
             <p>
-                يستخدم التطبيق الاتصال بالإنترنت للأغراض
-                التالية فقط:
+                يستخدم التطبيق الاتصال بالإنترنت للأغراض التالية فقط:
             </p>
 
             <ul>
@@ -230,8 +561,8 @@
                 </li>
 
                 <li>
-                    تنزيل أو تحديث النصوص أو الصور أو
-                    الأصوات أو الفيديوهات عند توفر تحديثات.
+                    تنزيل أو تحديث النصوص أو الصور أو الأصوات
+                    أو الفيديوهات عند توفر تحديثات.
                 </li>
 
                 <li>
@@ -241,16 +572,13 @@
             </ul>
 
             <p>
-                ولا يتم استخدام الاتصال بالإنترنت لجمع
-                بيانات شخصية عن المستخدم.
+                ولا يتم استخدام الاتصال بالإنترنت لجمع بيانات شخصية عن المستخدم.
             </p>
 
         </section>
 
 
-        <!-- =================================================
-             Section 4
-             ================================================= -->
+        <!-- Section 4 -->
 
         <section class="policy-section">
 
@@ -259,9 +587,8 @@
             </h2>
 
             <p>
-                يستخدم التطبيق الإشعارات المحلية لتذكير
-                المستخدم بالصلاة على النبي ﷺ وفقًا للإعدادات
-                التي يختارها بنفسه.
+                يستخدم التطبيق الإشعارات المحلية لتذكير المستخدم
+                بالصلاة على النبي ﷺ وفقًا للإعدادات التي يختارها بنفسه.
             </p>
 
             <p>
@@ -271,9 +598,7 @@
         </section>
 
 
-        <!-- =================================================
-             Section 5
-             ================================================= -->
+        <!-- Section 5 -->
 
         <section class="policy-section">
 
@@ -282,18 +607,15 @@
             </h2>
 
             <p>
-                قد يقوم التطبيق بتنزيل بعض الملفات الصوتية
-                أو الوسائط وحفظها داخل مساحة التخزين الخاصة
-                بالتطبيق حتى يمكن تشغيلها بكفاءة، ولا يتم
-                مشاركة هذه الملفات مع أي جهة خارجية.
+                قد يقوم التطبيق بتنزيل بعض الملفات الصوتية أو الوسائط
+                وحفظها داخل مساحة التخزين الخاصة بالتطبيق حتى يمكن
+                تشغيلها بكفاءة، ولا يتم مشاركة هذه الملفات مع أي جهة خارجية.
             </p>
 
         </section>
 
 
-        <!-- =================================================
-             Section 6
-             ================================================= -->
+        <!-- Section 6 -->
 
         <section class="policy-section">
 
@@ -302,30 +624,26 @@
             </h2>
 
             <p>
-                يعتمد التطبيق على بعض الخدمات التقنية
-                اللازمة لتشغيله، مثل:
+                يعتمد التطبيق على بعض الخدمات التقنية اللازمة لتشغيله، مثل:
             </p>
 
             <ul>
 
                 <li>
-                    <strong>Supabase</strong>
-                    لتخزين ومزامنة المحتوى.
+                    Supabase لتخزين ومزامنة المحتوى.
                 </li>
 
             </ul>
 
             <p>
-                ولا يتم استخدام هذه الخدمات لبيع بيانات
-                المستخدم أو مشاركتها لأغراض إعلانية.
+                ولا يتم استخدام هذه الخدمات لبيع بيانات المستخدم
+                أو مشاركتها لأغراض إعلانية.
             </p>
 
         </section>
 
 
-        <!-- =================================================
-             Section 7
-             ================================================= -->
+        <!-- Section 7 -->
 
         <section class="policy-section">
 
@@ -334,18 +652,15 @@
             </h2>
 
             <p>
-                نتخذ إجراءات مناسبة لحماية البيانات التي
-                يستخدمها التطبيق، ونعمل على تقليل كمية
-                البيانات المخزنة إلى الحد الأدنى اللازم
-                لتشغيل التطبيق.
+                نتخذ إجراءات مناسبة لحماية البيانات التي يستخدمها التطبيق،
+                ونعمل على تقليل كمية البيانات المخزنة إلى الحد الأدنى
+                اللازم لتشغيل التطبيق.
             </p>
 
         </section>
 
 
-        <!-- =================================================
-             Section 8
-             ================================================= -->
+        <!-- Section 8 -->
 
         <section class="policy-section">
 
@@ -361,9 +676,7 @@
         </section>
 
 
-        <!-- =================================================
-             Section 9
-             ================================================= -->
+        <!-- Section 9 -->
 
         <section class="policy-section">
 
@@ -372,17 +685,14 @@
             </h2>
 
             <p>
-                لا يقوم تطبيق صلِّ على المصطفى ﷺ ببيع أو
-                تأجير أو مشاركة بيانات المستخدم الشخصية
-                مع أي طرف ثالث.
+                لا يقوم تطبيق صلِّ على المصطفى ﷺ ببيع أو تأجير
+                أو مشاركة بيانات المستخدم الشخصية مع أي طرف ثالث.
             </p>
 
         </section>
 
 
-        <!-- =================================================
-             Section 10
-             ================================================= -->
+        <!-- Section 10 -->
 
         <section class="policy-section">
 
@@ -391,22 +701,19 @@
             </h2>
 
             <p>
-                قد يتم تحديث هذه السياسة عند إضافة ميزات
-                جديدة أو عند وجود متطلبات قانونية أو
-                تنظيمية جديدة.
+                قد يتم تحديث هذه السياسة عند إضافة ميزات جديدة
+                أو عند وجود متطلبات قانونية أو تنظيمية جديدة.
             </p>
 
             <p>
-                وسيتم نشر أي تحديث داخل هذه الصفحة مع
-                تحديث تاريخ آخر تعديل.
+                وسيتم نشر أي تحديث داخل هذه الصفحة
+                مع تحديث تاريخ آخر تعديل.
             </p>
 
         </section>
 
 
-        <!-- =================================================
-             Section 11
-             ================================================= -->
+        <!-- Section 11 -->
 
         <section class="policy-section">
 
@@ -416,56 +723,42 @@
 
             <p>
                 إذا كانت لديكم أي استفسارات أو ملاحظات
-                تتعلق بسياسة الخصوصية، يمكنكم التواصل
-                معنا عبر:
+                تتعلق بسياسة الخصوصية، يمكنكم التواصل معنا عبر:
             </p>
-
-            <div class="contact-box">
-
-                <p>
-                    <strong>البريد الإلكتروني:</strong>
-                </p>
-
-                <p class="contact-email">
-
-                    <a
-                        href="mailto:contact@masadereducation.com"
-                    >
-                        contact@masadereducation.com
-                    </a>
-
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             Agreement
-             ================================================= -->
-
-        <section class="policy-section">
 
             <p>
-                باستخدامك لتطبيق
-                <strong>صلِّ على المصطفى ﷺ</strong>
-                فإنك توافق على سياسة الخصوصية هذه.
+                البريد الإلكتروني:
+                <a
+                    href="mailto:contact@masadereducation.com"
+                    class="email"
+                >
+                    contact@masadereducation.com
+                </a>
             </p>
 
         </section>
+
+
+        <!-- Agreement -->
+
+        <div class="agreement">
+
+            باستخدامك لتطبيق صلِّ على المصطفى ﷺ
+            فإنك توافق على سياسة الخصوصية هذه.
+
+        </div>
 
     </main>
 
 
-    <!-- =====================================================
+    <!-- =========================
          Footer
-         ===================================================== -->
+    ========================= -->
 
-    <footer class="footer">
+    <footer>
 
         <p>
-            صلِّ على المصطفى ﷺ
+            صلِّ على المصطفى ﷺ
         </p>
 
         <p>
@@ -473,18 +766,13 @@
         </p>
 
         <p>
-            <a
-                href="mailto:contact@masadereducation.com"
-            >
+            <a href="mailto:contact@masadereducation.com">
                 contact@masadereducation.com
             </a>
         </p>
 
         <p>
-            <a
-                href="index.html"
-                data-home-link
-            >
+            <a href="index.html">
                 اختيار اللغة
             </a>
         </p>
@@ -493,13 +781,5 @@
 
 </div>
 
-
-<!-- =======================================================
-     JavaScript
-     ======================================================= -->
-
-<script src="script.js"></script>
-
 </body>
-
 </html>
