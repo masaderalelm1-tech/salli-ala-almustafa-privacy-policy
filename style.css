@@ -1,1 +1,702 @@
-x
+/* =========================================================
+   Salli Ala Almustafa ﷺ - Privacy Policy
+   Main stylesheet
+   ========================================================= */
+
+:root {
+    --primary: #2f8064;
+    --primary-dark: #24684f;
+    --primary-light: #e8f2ed;
+
+    --background: #f5f7f6;
+    --surface: #ffffff;
+
+    --text: #263238;
+    --text-secondary: #657277;
+    --heading: #1f2d2a;
+
+    --border: #e1e7e4;
+    --shadow: 0 8px 30px rgba(30, 60, 50, 0.08);
+
+    --radius: 16px;
+    --max-width: 1100px;
+
+    --font-family:
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+}
+
+/* =========================================================
+   Reset
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: var(--background);
+    color: var(--text);
+
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.8;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   Main page container
+   ========================================================= */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 45px 20px 35px;
+}
+
+/* =========================================================
+   Header
+   ========================================================= */
+
+.header {
+    width: 100%;
+    max-width: var(--max-width);
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+
+    margin: 0 auto 20px;
+}
+
+.app-title {
+    margin: 0;
+
+    color: var(--primary);
+
+    font-size: 38px;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+.subtitle {
+    margin: 3px 0 0;
+
+    color: var(--text-secondary);
+
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.subtitle-ar {
+    margin-top: -2px;
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+}
+
+/* =========================================================
+   Language selection
+   ========================================================= */
+
+.language-section {
+    width: 100%;
+    max-width: var(--max-width);
+
+    margin: 0 auto 35px;
+
+    padding: 38px 32px;
+
+    background: var(--surface);
+
+    border: 1px solid rgba(40, 80, 65, 0.06);
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+}
+
+.language-title {
+    margin: 0 0 25px;
+
+    color: var(--heading);
+
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.language-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+.language-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 58px;
+
+    padding: 12px 16px;
+
+    background: var(--primary);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.language-button:hover {
+    background: var(--primary-dark);
+
+    text-decoration: none;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 16px rgba(47, 128, 100, 0.20);
+}
+
+.language-button:active {
+    transform: translateY(0);
+}
+
+.language-button:focus-visible {
+    outline: 3px solid rgba(47, 128, 100, 0.30);
+    outline-offset: 3px;
+}
+
+/* =========================================================
+   Privacy policy content
+   ========================================================= */
+
+.policy-container {
+    width: 100%;
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 45px 50px;
+
+    background: var(--surface);
+
+    border: 1px solid rgba(40, 80, 65, 0.06);
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+}
+
+.policy-header {
+    margin-bottom: 35px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid var(--border);
+
+    text-align: center;
+}
+
+.policy-title {
+    margin: 0 0 8px;
+
+    color: var(--primary);
+
+    font-size: 34px;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+.last-updated {
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+}
+
+/* =========================================================
+   Sections
+   ========================================================= */
+
+.policy-section {
+    margin-bottom: 35px;
+}
+
+.policy-section:last-child {
+    margin-bottom: 0;
+}
+
+.policy-section h2 {
+    margin: 0 0 12px;
+
+    color: var(--heading);
+
+    font-size: 23px;
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+.policy-section p {
+    margin: 0 0 14px;
+
+    color: var(--text);
+
+    font-size: 16px;
+}
+
+.policy-section ul {
+    margin: 10px 0 18px;
+
+    padding-inline-start: 28px;
+}
+
+.policy-section li {
+    margin-bottom: 7px;
+
+    color: var(--text);
+
+    font-size: 16px;
+}
+
+.policy-section strong {
+    color: var(--heading);
+}
+
+/* =========================================================
+   Contact section
+   ========================================================= */
+
+.contact-box {
+    margin-top: 15px;
+
+    padding: 20px 22px;
+
+    background: var(--primary-light);
+
+    border: 1px solid rgba(47, 128, 100, 0.15);
+    border-radius: 12px;
+}
+
+.contact-box p {
+    margin: 5px 0;
+}
+
+.contact-email {
+    font-weight: 600;
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.footer {
+    width: 100%;
+    max-width: var(--max-width);
+
+    margin: 35px auto 0;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: var(--primary);
+}
+
+/* =========================================================
+   Back / language navigation
+   ========================================================= */
+
+.language-navigation {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.back-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+
+    padding: 8px 18px;
+
+    background: var(--primary-light);
+    color: var(--primary);
+
+    border: 1px solid rgba(47, 128, 100, 0.15);
+    border-radius: 9px;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.back-button:hover {
+    background: var(--primary);
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+/* =========================================================
+   RTL support
+   ========================================================= */
+
+html[dir="rtl"] body {
+    direction: rtl;
+}
+
+html[dir="rtl"] .policy-container {
+    text-align: right;
+}
+
+html[dir="rtl"] .policy-header {
+    text-align: center;
+}
+
+html[dir="rtl"] .language-button {
+    direction: rtl;
+}
+
+html[dir="rtl"] .policy-section ul {
+    padding-right: 28px;
+    padding-left: 0;
+}
+
+/* =========================================================
+   LTR support
+   ========================================================= */
+
+html[dir="ltr"] body {
+    direction: ltr;
+}
+
+html[dir="ltr"] .policy-container {
+    text-align: left;
+}
+
+/* =========================================================
+   Language-specific typography
+   ========================================================= */
+
+[lang="ar"],
+[lang="ur"],
+[lang="ku"] {
+    font-family:
+        "Noto Sans Arabic",
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+}
+
+[lang="zh"] {
+    font-family:
+        "Noto Sans SC",
+        "Microsoft YaHei",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+}
+
+[lang="bn"] {
+    font-family:
+        "Noto Sans Bengali",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+}
+
+/* =========================================================
+   Mobile - tablets
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .page {
+        padding: 35px 16px 25px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .app-title {
+        font-size: 32px;
+    }
+
+    .language-section {
+        padding: 30px 24px;
+    }
+
+    .language-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .policy-container {
+        padding: 35px 30px;
+    }
+
+    .policy-title {
+        font-size: 30px;
+    }
+}
+
+/* =========================================================
+   Mobile - phones
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .page {
+        padding: 25px 12px 20px;
+    }
+
+    .header {
+        margin-bottom: 25px;
+    }
+
+    .logo {
+        width: 125px;
+        height: 125px;
+
+        margin-bottom: 14px;
+    }
+
+    .app-title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .subtitle-ar {
+        font-size: 14px;
+    }
+
+    .language-section {
+        padding: 25px 15px;
+
+        border-radius: 16px;
+    }
+
+    .language-title {
+        margin-bottom: 20px;
+
+        font-size: 23px;
+    }
+
+    .language-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .language-button {
+        min-height: 52px;
+
+        padding: 9px 8px;
+
+        border-radius: 8px;
+
+        font-size: 16px;
+    }
+
+    .policy-container {
+        padding: 28px 20px;
+
+        border-radius: 16px;
+    }
+
+    .policy-title {
+        font-size: 27px;
+    }
+
+    .policy-section {
+        margin-bottom: 28px;
+    }
+
+    .policy-section h2 {
+        font-size: 20px;
+    }
+
+    .policy-section p,
+    .policy-section li {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .policy-section ul {
+        padding-inline-start: 22px;
+    }
+
+    .contact-box {
+        padding: 16px;
+    }
+
+    .footer {
+        padding: 15px 10px;
+
+        font-size: 13px;
+    }
+}
+
+/* =========================================================
+   Very small screens
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .language-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .language-button {
+        min-height: 50px;
+    }
+
+    .app-title {
+        font-size: 25px;
+    }
+
+    .policy-container {
+        padding: 24px 16px;
+    }
+}
+
+/* =========================================================
+   Accessibility
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* =========================================================
+   Print
+   ========================================================= */
+
+@media print {
+
+    body {
+        background: #ffffff;
+    }
+
+    .page {
+        padding: 0;
+    }
+
+    .language-section,
+    .language-navigation,
+    .footer {
+        display: none;
+    }
+
+    .policy-container {
+        max-width: none;
+
+        padding: 0;
+
+        border: none;
+        box-shadow: none;
+    }
+
+    .policy-section {
+        break-inside: avoid;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: underline;
+    }
+}
