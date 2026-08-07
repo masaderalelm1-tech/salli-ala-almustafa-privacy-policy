@@ -1,255 +1,570 @@
+```html
 <!DOCTYPE html>
 <html lang="zh-CN" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>隐私政策 - Salli Ala Almustafa ﷺ</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta
+        name="description"
+        content="Salli Ala Almustafa ﷺ 应用程序的隐私政策。"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2f8164"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logo.png"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f6f5;
+            color: #1f2937;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Microsoft YaHei",
+                "PingFang SC",
+                Arial,
+                sans-serif;
+
+            line-height: 1.9;
+            -webkit-font-smoothing: antialiased;
+
+            overflow-x: hidden;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 32px 20px 24px;
+        }
+
+        .logo {
+            display: block;
+
+            width: clamp(85px, 13vw, 130px);
+            height: clamp(85px, 13vw, 130px);
+
+            max-width: 100%;
+            max-height: 100%;
+
+            object-fit: contain;
+
+            margin: 0 auto 18px;
+        }
+
+        .app-name {
+            margin: 0;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.35rem,
+                3.5vw,
+                2rem
+            );
+
+            font-weight: 700;
+        }
+
+        .page-title {
+            margin: 6px 0 0;
+
+            color: #1f2937;
+
+            font-size: clamp(
+                1.15rem,
+                2.5vw,
+                1.45rem
+            );
+
+            font-weight: 600;
+        }
+
+        .page-subtitle {
+            margin: 2px 0 0;
+
+            color: #4b5563;
+
+            font-size: 0.95rem;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 0 18px 40px;
+        }
+
+        .privacy-card {
+            background: #ffffff;
+
+            border:
+                1px solid
+                rgba(47, 129, 100, 0.08);
+
+            border-radius: 22px;
+
+            padding:
+                clamp(22px, 5vw, 48px);
+
+            box-shadow:
+                0 12px 35px
+                rgba(31, 41, 55, 0.07),
+                0 2px 8px
+                rgba(31, 41, 55, 0.03);
+        }
+
+        .updated {
+            display: inline-block;
+
+            margin-bottom: 22px;
+
+            padding: 6px 13px;
+
+            background:
+                rgba(47, 129, 100, 0.08);
+
+            color: #287b60;
+
+            border-radius: 999px;
+
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .privacy-card h1 {
+            margin: 0 0 14px;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.4rem,
+                3vw,
+                1.85rem
+            );
+
+            line-height: 1.6;
+        }
+
+        .privacy-card h2 {
+            margin: 34px 0 10px;
+
+            padding-left: 12px;
+
+            border-left:
+                4px solid
+                #2f8164;
+
+            color: #287b60;
+
+            font-size: clamp(
+                1.08rem,
+                2.4vw,
+                1.3rem
+            );
+
+            line-height: 1.7;
+        }
+
+        .privacy-card p {
+            margin: 0 0 14px;
+
+            color: #374151;
+
+            font-size: clamp(
+                0.94rem,
+                1.8vw,
+                1.02rem
+            );
+        }
+
+        .privacy-card ul {
+            margin: 8px 0 18px;
+            padding-left: 28px;
+            color: #374151;
+        }
+
+        .privacy-card li {
+            margin-bottom: 6px;
+
+            font-size: clamp(
+                0.93rem,
+                1.7vw,
+                1rem
+            );
+        }
+
+        .email {
+            color: #2f8164;
+
+            font-weight: 600;
+
+            text-decoration: none;
+
+            word-break: break-word;
+        }
+
+        .email:hover {
+            color: #287b60;
+            text-decoration: underline;
+        }
+
+        .agreement {
+            margin-top: 30px !important;
+
+            padding-top: 22px;
+
+            border-top:
+                1px solid
+                rgba(31, 41, 55, 0.1);
+
+            color: #287b60 !important;
+
+            font-weight: 600;
+        }
+
+        .page-footer {
+            padding:
+                0
+                20px
+                30px;
+
+            text-align: center;
+
+            color: #4b5563;
+
+            font-size: 0.85rem;
+        }
+
+        .page-footer a {
+            color: #2f8164;
+            text-decoration: none;
+        }
+
+        .page-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+
+            .page-header {
+                padding:
+                    22px
+                    14px
+                    18px;
+            }
+
+            .content-wrapper {
+                padding:
+                    0
+                    10px
+                    28px;
+            }
+
+            .privacy-card {
+                border-radius: 17px;
+                padding: 20px 17px;
+            }
+
+            .privacy-card h2 {
+                margin-top: 28px;
+                padding-left: 9px;
+            }
+
+            .privacy-card ul {
+                padding-left: 22px;
+            }
+        }
+
+        @media (max-width: 330px) {
+
+            .privacy-card {
+                padding: 18px 14px;
+            }
+
+            .privacy-card p,
+            .privacy-card li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
+
 
 <body>
 
-<header class="site-header">
+    <header class="page-header">
 
-    <img src="assets/logo.png"
-         alt="Salli Ala Almustafa ﷺ 标志"
-         class="logo">
+        <img
+            src="assets/logo.png"
+            alt="Salli Ala Almustafa ﷺ 应用程序徽标"
+            class="logo"
+        >
 
-    <h1>Salli Ala Almustafa ﷺ</h1>
+        <h1 class="app-name">
+            Salli Ala Almustafa ﷺ
+        </h1>
 
-    <div class="subtitle">
-        隐私政策
-    </div>
-
-</header>
-
-
-<main class="policy-container">
-
-    <div class="language-selector">
-        <a href="ar.html">العربية</a>
-        <a href="en.html">English</a>
-        <a href="fr.html">Français</a>
-        <a href="es.html">Español</a>
-        <a href="id.html">Bahasa Indonesia</a>
-        <a href="ru.html">Русский</a>
-        <a href="tr.html">Türkçe</a>
-        <a href="ur.html">اردو</a>
-        <a href="zh.html" class="active">中文</a>
-        <a href="uk.html">Українська</a>
-        <a href="sw.html">Kiswahili</a>
-        <a href="bn.html">বাংলা</a>
-        <a href="so.html">Soomaali</a>
-        <a href="fil.html">Filipino</a>
-        <a href="ku.html">کوردی</a>
-    </div>
-
-
-    <article class="policy">
-
-        <h2>Salli Ala Almustafa ﷺ 应用隐私政策</h2>
-
-        <p>
-            <strong>最后更新：</strong>2026年7月27日
+        <p class="page-title">
+            隐私政策
         </p>
 
-        <p>
-            欢迎使用 Salli Ala Almustafa ﷺ 应用。
-            我们重视用户的隐私保护。
-            本隐私政策说明了您在使用本应用期间，
-            应用如何处理相关信息和数据。
+        <p class="page-subtitle">
+            Privacy Policy
         </p>
 
+    </header>
 
-        <h3>一、应用收集的信息</h3>
+
+    <main class="content-wrapper">
+
+        <article class="privacy-card">
+
+            <span class="updated">
+                最后更新：2026年8月10日
+            </span>
+
+            <h1>
+                Salli Ala Almustafa ﷺ 应用程序隐私政策
+            </h1>
+
+
+            <p>
+                欢迎使用 Salli Ala Almustafa ﷺ 应用程序。
+                我们高度重视用户的隐私保护。本隐私政策说明了
+                在您使用本应用程序期间，我们如何处理相关信息和数据。
+            </p>
+
+
+            <h2>
+                1. 应用程序收集的信息
+            </h2>
+
+            <p>
+                Salli Ala Almustafa ﷺ 应用程序不会收集、请求或存储
+                可以用于识别用户身份的个人信息，包括：
+            </p>
+
+            <ul>
+                <li>姓名。</li>
+                <li>电子邮件地址。</li>
+                <li>电话号码。</li>
+                <li>地理位置数据。</li>
+                <li>联系人。</li>
+                <li>个人照片。</li>
+                <li>消息。</li>
+            </ul>
+
+            <p>
+                使用应用程序的基本功能无需创建账户或登录。
+            </p>
+
+
+            <h2>
+                2. 在设备本地存储的数据
+            </h2>
+
+            <p>
+                为了改善用户体验，应用程序会在用户设备上本地保存
+                一些设置，例如：
+            </p>
+
+            <ul>
+                <li>用户选择的提醒声音。</li>
+                <li>提醒设置。</li>
+                <li>用户偏好设置。</li>
+                <li>
+                    为在应用程序中使用而下载的部分媒体文件。
+                </li>
+            </ul>
+
+            <p>
+                这些数据存储在应用程序专用的存储空间中，
+                其他应用程序无法访问这些数据。
+            </p>
+
+
+            <h2>
+                3. 互联网连接
+            </h2>
+
+            <p>
+                应用程序仅在以下情况下使用互联网连接：
+            </p>
+
+            <ul>
+                <li>与服务器同步内容。</li>
+                <li>
+                    在有更新时下载或更新文本、图片、音频或视频内容。
+                </li>
+                <li>
+                    改善应用程序中显示的内容。
+                </li>
+            </ul>
+
+            <p>
+                互联网连接不会用于收集用户的个人信息。
+            </p>
+
+
+            <h2>
+                4. 通知
+            </h2>
+
+            <p>
+                应用程序使用本地通知，根据用户自行选择的设置，
+                提醒用户向先知穆罕默德 ﷺ 祝福。
+            </p>
+
+            <p>
+                应用程序不会发送任何广告或营销通知。
+            </p>
+
+
+            <h2>
+                5. 文件和音频
+            </h2>
+
+            <p>
+                应用程序可能会下载某些音频文件或其他媒体内容，
+                并将其存储在应用程序专用的存储空间中，以便高效播放。
+                这些文件不会与任何第三方共享。
+            </p>
+
+
+            <h2>
+                6. 第三方服务
+            </h2>
+
+            <p>
+                应用程序使用某些运行所必需的技术服务，包括：
+            </p>
+
+            <ul>
+                <li>
+                    Supabase，用于存储和同步内容。
+                </li>
+            </ul>
+
+            <p>
+                这些服务不会被用于出售用户数据，
+                也不会将用户数据用于广告目的的共享。
+            </p>
+
+
+            <h2>
+                7. 数据保护
+            </h2>
+
+            <p>
+                我们采取适当的措施保护应用程序所使用的数据，
+                并努力将存储的数据量限制在应用程序正常运行
+                所必需的最低范围内。
+            </p>
+
+
+            <h2>
+                8. 儿童隐私
+            </h2>
+
+            <p>
+                本应用程序适合所有年龄段的用户，并不会故意收集
+                儿童的任何个人信息。
+            </p>
+
+
+            <h2>
+                9. 数据共享
+            </h2>
+
+            <p>
+                Salli Ala Almustafa ﷺ 应用程序不会向任何第三方
+                出售、出租或共享用户的个人信息。
+            </p>
+
+
+            <h2>
+                10. 隐私政策的变更
+            </h2>
+
+            <p>
+                当我们添加新功能或出现新的法律或监管要求时，
+                本隐私政策可能会进行更新。
+            </p>
+
+            <p>
+                任何更新都会发布在本页面，并同时更新最后修改日期。
+            </p>
+
+
+            <h2>
+                11. 联系我们
+            </h2>
+
+            <p>
+                如果您对本隐私政策有任何疑问或意见，
+                可以通过以下方式联系我们：
+            </p>
+
+            <p>
+                <strong>电子邮件：</strong>
+                <a
+                    class="email"
+                    href="mailto:contact@masadereducation.com"
+                >
+                    contact@masadereducation.com
+                </a>
+            </p>
+
+
+            <p class="agreement">
+                使用 Salli Ala Almustafa ﷺ 应用程序即表示您同意
+                本隐私政策。
+            </p>
+
+        </article>
+
+    </main>
+
+
+    <footer class="page-footer">
 
         <p>
-            Salli Ala Almustafa ﷺ 应用不会收集、请求或存储
-            可以用于识别用户身份的个人信息，例如：
+            Developed by Masader Al-Elm Educational
         </p>
 
-        <ul>
-            <li>姓名。</li>
-            <li>电子邮箱地址。</li>
-            <li>电话号码。</li>
-            <li>地理位置。</li>
-            <li>联系人。</li>
-            <li>个人照片。</li>
-            <li>消息。</li>
-        </ul>
-
-        <p>
-            使用应用的基本服务不需要创建账户或登录。
-        </p>
-
-
-        <h3>二、在本地存储的数据</h3>
-
-        <p>
-            为了改善用户体验，本应用会将部分设置仅存储在用户的设备上，
-            例如：
-        </p>
-
-        <ul>
-            <li>提醒所选择的声音。</li>
-            <li>提醒设置。</li>
-            <li>用户偏好设置。</li>
-            <li>下载后用于应用内部使用的部分媒体文件。</li>
-        </ul>
-
-        <p>
-            这些数据存储在应用的私有存储空间中，
-            其他应用无法访问。
-        </p>
-
-
-        <h3>三、互联网连接</h3>
-
-        <p>
-            本应用仅在以下情况下使用互联网连接：
-        </p>
-
-        <ul>
-            <li>与服务器同步内容。</li>
-
-            <li>
-                在有更新时下载或更新文本、图片、音频或视频。
-            </li>
-
-            <li>
-                改进应用中显示的内容。
-            </li>
-        </ul>
-
-        <p>
-            互联网连接不会被用于收集用户的个人信息。
-        </p>
-
-
-        <h3>四、通知</h3>
-
-        <p>
-            本应用使用本地通知，根据用户自行选择的设置，
-            提醒用户向先知穆罕默德 ﷺ 诵念赞词（Salawat）。
-        </p>
-
-        <p>
-            本应用不会发送广告或营销通知。
-        </p>
-
-
-        <h3>五、文件和音频</h3>
-
-        <p>
-            本应用可能会下载部分音频文件或其他媒体内容，
-            并将其存储在应用的私有存储空间中，
-            以便更加高效地播放。
-        </p>
-
-        <p>
-            这些文件不会与任何第三方共享。
-        </p>
-
-
-        <h3>六、第三方服务</h3>
-
-        <p>
-            本应用使用一些运行所必需的技术服务，例如：
-        </p>
-
-        <ul>
-            <li>
-                <strong>Supabase</strong> —
-                用于存储和同步内容。
-            </li>
-        </ul>
-
-        <p>
-            这些服务不会被用于出售用户数据，
-            也不会将用户数据用于广告目的。
-        </p>
-
-
-        <h3>七、数据安全</h3>
-
-        <p>
-            我们采取适当的措施保护应用所使用的数据，
-            并努力将应用运行所需存储的数据量降至最低。
-        </p>
-
-
-        <h3>八、儿童隐私</h3>
-
-        <p>
-            本应用适合所有年龄段的用户，
-            我们不会故意收集儿童的个人信息。
-        </p>
-
-
-        <h3>九、数据共享</h3>
-
-        <p>
-            Salli Ala Almustafa ﷺ 不会出售、出租或与任何第三方
-            共享用户的个人数据。
-        </p>
-
-
-        <h3>十、隐私政策的变更</h3>
-
-        <p>
-            如果我们添加新的功能，或者出现新的法律或监管要求，
-            本隐私政策可能会进行更新。
-        </p>
-
-        <p>
-            任何更新都会发布在本页面上，
-            并同时更新最后修改日期。
-        </p>
-
-
-        <h3>十一、联系我们</h3>
-
-        <p>
-            如果您对本隐私政策有任何问题或意见，
-            可以通过以下方式联系我们：
-        </p>
-
-        <p>
-            <strong>电子邮箱：</strong>
-            <a href="mailto:contact@masadereducation.com">
-                contact@masadereducation.com
-            </a>
-        </p>
-
-
-        <hr>
-
-        <p>
-            使用 Salli Ala Almustafa ﷺ 应用，
-            即表示您同意本隐私政策。
-        </p>
-
-    </article>
-
-</main>
-
-
-<footer>
-
-    <p>
-        由 Masader Al-Elm Educational 开发
-    </p>
-
-    <p>
         <a href="mailto:contact@masadereducation.com">
             contact@masadereducation.com
         </a>
-    </p>
 
-</footer>
+    </footer>
 
 </body>
 </html>
+```
